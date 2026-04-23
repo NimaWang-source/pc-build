@@ -200,6 +200,32 @@
       "tags": ["high-end", "amd", "am5"]
     },
     {
+      "id": "cpu-amd-r9-9950x3d2",
+      "category": "cpu",
+      "brand": "AMD",
+      "model": "Ryzen 9 9950X3D2",
+      "price": {
+        "minTwd": 23950,
+        "maxTwd": 23950,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "AM5",
+        "memoryType": "DDR5"
+      },
+      "specs": {
+        "cores": 16,
+        "performanceClass": "flagship-mainstream",
+        "notes": [
+          "Flagship AM5 option above 9800X3D pricing tier.",
+          "Positioned for premium Blender workstations that still want mainstream platform flexibility."
+        ]
+      },
+      "tags": ["flagship", "high-end", "amd", "am5", "recommended"]
+    },
+    {
       "id": "mb-intel-b860m-entry",
       "category": "motherboard",
       "brand": "Generic",
