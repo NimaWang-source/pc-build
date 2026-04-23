@@ -159,9 +159,8 @@ function getPartArtDataUri(part) {
   const label = escapeXml(getPartArtLabel(part));
   const model = escapeXml(part.model);
   const brand = escapeXml(part.brand);
-  const accent = part.brand === 'AMD' ? '#ff453a' : part.brand === 'Intel' ? '#0071e3' : part.brand === 'NVIDIA' ? '#30d158' : '#0071e3';
-  const secondary = part.brand === 'NVIDIA' ? '#64d2ff' : '#a1a1a6';
-  const meta = escapeXml(getPartHighlights(part) || label);
+  const accent = '#0071e3';
+  const secondary = 'rgba(255,255,255,0.32)';
   const fanCount = Math.max(1, Math.min(3, Math.round((part.specs?.vramGb || part.specs?.cores || 6) / 8)));
   const memoryModules = Math.max(1, Math.min(4, part.specs?.modules || Math.round((part.specs?.capacityGb || 32) / 32) || 2));
   let artwork = '';
@@ -217,13 +216,12 @@ function getPartArtDataUri(part) {
   }
 
   const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="${part.model}">
-      <rect width="320" height="200" rx="16" fill="#1d1d1f"/>
-      <rect x="28" y="24" width="264" height="152" rx="18" fill="#2a2a2d" stroke="rgba(255,255,255,0.12)"/>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="${part.model}">
+      <rect width="320" height="320" rx="16" fill="#1d1d1f"/>
+      <rect x="24" y="24" width="272" height="272" rx="18" fill="#2a2a2d" stroke="rgba(255,255,255,0.12)"/>
       ${artwork}
-      <text x="36" y="156" fill="rgba(255,255,255,0.92)" font-family="Helvetica Neue, Arial, sans-serif" font-size="16">${brand}</text>
-      <text x="36" y="176" fill="rgba(255,255,255,0.62)" font-family="Helvetica Neue, Arial, sans-serif" font-size="12">${meta}</text>
-      <text x="160" y="188" fill="rgba(255,255,255,0.82)" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" text-anchor="middle">${model}</text>
+      <text x="160" y="278" fill="rgba(255,255,255,0.92)" font-family="SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">${brand}</text>
+      <text x="160" y="300" fill="rgba(255,255,255,0.62)" font-family="SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle">${label}</text>
     </svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
