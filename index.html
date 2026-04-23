@@ -43,9 +43,13 @@
   </section>
 
   <!-- Configurator (Dark Section) -->
-  <section id="build" class="section-dark">
+  <section id="build" class="section-dark section-build">
     <div class="container">
-      <h2 class="section-heading">Custom Configure</h2>
+      <div class="build-intro">
+        <p class="build-eyebrow">Custom Configure</p>
+        <h2 class="section-heading build-title">Choose every part by price. Track total live.</h2>
+        <p class="build-copy">Apple-inspired spacing, restrained dark surfaces, and a running total that stays visible while you build.</p>
+      </div>
       <div class="filter-bar" aria-label="Catalog filters">
         <div class="filter-group">
           <label class="filter-label" for="search-input">Search parts</label>
@@ -94,16 +98,25 @@
               <!-- Compatibility issues rendered here -->
             </div>
             
-            <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;">
-              <p class="caption" style="color: rgba(255,255,255,0.5);">Estimated Total (TWD)</p>
+            <div class="summary-total-block">
+              <p class="caption summary-total-label">Estimated Total (TWD)</p>
               <div class="build-total" id="build-total">NT$0</div>
-              <button class="btn-primary" style="width: 100%; padding: 14px; font-weight: 600; border-radius: 980px;">Review Order</button>
+              <button class="btn-primary summary-total-cta">Review Order</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="mobile-total-bar" id="mobile-total-bar" aria-live="polite">
+    <div class="mobile-total-copy">
+      <span class="caption mobile-total-label">Running Total</span>
+      <strong class="mobile-total-amount" id="mobile-build-total">NT$0</strong>
+      <span class="mobile-total-meta" id="mobile-build-meta">0 / 8 categories • 0 items</span>
+    </div>
+    <a href="#summary-sidebar" class="btn-primary mobile-total-action">Review</a>
+  </div>
 
   <script src="fallback.js"></script>
   <script src="premium-fallback.js"></script>

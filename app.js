@@ -237,16 +237,32 @@ function matchesPremium(part) {
 }
 
 function getFilteredParts(categoryId) {
-  return db.parts.filter((part) => {
-    if (part.category !== categoryId) return false;
-    if (isHiddenPart(part)) return false;
-    if (!matchesSearch(part)) return false;
-    if (!matchesWorkload(part)) return false;
-    if (!matchesAssemblyOnly(part)) return false;
-    if (!matchesVolatility(part)) return false;
-    if (!matchesPremium(part)) return false;
-    return true;
-  });
+  return db.parts
+    .filter((part) => {
+      if (part.category !== categoryId) return false;
+      if (isHiddenPart(part)) return false;
+      if (!matchesSearch(part)) return false;
+      if (!matchesWorkload(part)) return false;
+      if (!matchesAssemblyOnly(part)) return false;
+      if (!matchesVolatility(part)) return false;
+      if (!matchesPremium(part)) return false;
+      return true;
+    })
+    .sort((left, right) => {
+      const leftMin = left.price?.minTwd ?? Number.MAX_SAFE_INTEGER;
+      const rightMin = right.price?.minTwd ?? Number.MAX_SAFE_INTEGER;
+      if (leftMin !== rightMin) {
+        return leftMin - rightMin;
+      }
+
+      const leftMax = left.price?.maxTwd ?? leftMin;
+      const rightMax = right.price?.maxTwd ?? rightMin;
+      if (leftMax !== rightMax) {
+        return leftMax - rightMax;
+      }
+
+      return left.model.localeCompare(right.model, 'en');
+    });
 }
 
 function renderPresets() {
@@ -397,6 +413,9 @@ window.loadPreset = function loadPreset(presetId) {
 
 function updateSummary() {
   const container = document.getElementById('summary-items');
+  const priceEl = document.getElementById('build-total');
+  const floatingPriceEl = document.getElementById('mobile-build-total');
+  const floatingMetaEl = document.getElementById('mobile-build-meta');
   container.innerHTML = '';
 
   let minTotal = 0;
@@ -455,10 +474,17 @@ function updateSummary() {
   buildReadiness.innerHTML = `<div class="caption">Build coverage</div><div class="body-emphasis">${selectedCategoryCount} / ${CATEGORY_DEFINITIONS.length} categories • ${selectedItemCount} items</div>`;
   container.appendChild(buildReadiness);
 
-  const priceEl = document.getElementById('build-total');
-  priceEl.textContent = minTotal === maxTotal
+  const totalText = minTotal === maxTotal
     ? formatTwd(minTotal)
     : `${formatTwd(minTotal)} - ${formatTwd(maxTotal)}`;
+
+  priceEl.textContent = totalText;
+  if (floatingPriceEl) {
+    floatingPriceEl.textContent = totalText;
+  }
+  if (floatingMetaEl) {
+    floatingMetaEl.textContent = `${selectedCategoryCount} / ${CATEGORY_DEFINITIONS.length} categories • ${selectedItemCount} items`;
+  }
 
   checkCompatibility();
 }
