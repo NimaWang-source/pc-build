@@ -9,10 +9,36 @@
 <body>
   <!-- Global Navigation -->
   <nav class="global-nav">
-    <a href="#" class="nav-link">Configurator Pro</a>
-    <div class="nav-links">
-      <a href="#presets" class="nav-link" style="margin-right: 16px;">Reference Builds</a>
+    <a href="#" class="nav-link nav-brand" aria-label="Configurator Pro home">
+      <svg class="nav-logo" aria-hidden="true" viewBox="0 0 17 48" fill="currentColor">
+        <path d="M11.12 7.08c-.64.76-1.69 1.35-2.64 1.27-.12-1.03.33-2.14.94-2.87.67-.81 1.8-1.39 2.74-1.43.09 1.09-.31 2.15-1.04 3.03ZM13.86 24.62c.02 2.64 2.3 3.52 2.33 3.53-.02.06-.36 1.25-1.19 2.47-.72 1.06-1.47 2.12-2.65 2.14-1.16.02-1.53-.69-2.86-.69-1.32 0-1.74.67-2.83.71-1.14.04-2.01-1.14-2.73-2.19-1.47-2.12-2.59-6-1.08-8.63.75-1.3 2.1-2.12 3.57-2.14 1.12-.02 2.17.75 2.86.75.69 0 1.99-.93 3.35-.79.57.02 2.18.23 3.22 1.75-.08.05-1.92 1.12-1.89 3.09Z"/>
+      </svg>
+    </a>
+    <div class="nav-links nav-links-desktop">
+      <a href="#presets" class="nav-link">Reference Builds</a>
       <a href="#build" class="nav-link">Custom Build</a>
+    </div>
+    <div class="nav-actions nav-actions-desktop" aria-label="Utility navigation">
+      <a href="#build" class="nav-link nav-icon-link" aria-label="Search parts">
+        <svg class="nav-icon" aria-hidden="true" viewBox="0 0 15 44" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="6.5" cy="20.5" r="4.75"></circle>
+          <path d="M10.2 24.2 13 27"></path>
+        </svg>
+      </a>
+      <a href="#summary-sidebar" class="nav-link nav-icon-link" aria-label="Open build summary">
+        <svg class="nav-icon" aria-hidden="true" viewBox="0 0 14 44" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M4 17.5h6l.75 9H3.25l.75-9Z"></path>
+          <path d="M5.25 17.5a1.75 1.75 0 1 1 3.5 0"></path>
+        </svg>
+      </a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links nav-menu-mobile" id="nav-menu">
+      <a href="#presets" class="nav-link nav-menu-link">Reference Builds</a>
+      <a href="#build" class="nav-link nav-menu-link">Custom Build</a>
     </div>
   </nav>
 
@@ -20,12 +46,12 @@
   <section class="section-dark" style="padding-top: 120px; min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
     <div class="container text-center">
       <h1 class="hero-heading">Flagship Performance.<br>No Ceiling.</h1>
-      <p class="section-heading" style="font-size: 24px; font-weight: 400; opacity: 0.8; max-width: 600px; margin: 0 auto 40px;">
+      <p class="hero-subhead" style="max-width: 600px; margin: 0 auto 40px;">
         Configure from mainstream AM5 up to Threadripper PRO, RTX PRO Blackwell, and multi-SSD workstation storage for Blender and Gaussian Splatting.
       </p>
       <div>
         <a href="#presets" class="btn-pill" style="margin-right: 12px; font-size: 17px; padding: 12px 24px;">Learn more</a>
-        <a href="#build" class="btn-primary" style="padding: 12px 24px; text-decoration: none; border-radius: 980px;">Start Building</a>
+        <a href="#build" class="btn-primary" style="padding: 12px 24px; text-decoration: none; border-radius: 8px;">Start Building</a>
       </div>
     </div>
   </section>
@@ -34,7 +60,7 @@
   <section id="presets" class="section-light">
     <div class="container">
       <h2 class="section-heading">Reference Architectures</h2>
-      <p class="text-center mb-2" style="max-width: 600px; margin: 0 auto 60px;">Curated by professionals. Optimized for your workflow.</p>
+      <p class="reference-copy mb-2" style="max-width: 600px; margin: 0 auto 60px;">Curated by professionals. Optimized for your workflow.</p>
       
       <div id="presets-container" class="grid-3">
         <!-- Rendered by JS -->
@@ -90,11 +116,11 @@
         <div>
           <div class="sidebar" id="summary-sidebar">
             <h3 class="tile-heading">Your Workstation</h3>
-            <div id="summary-items" style="margin-top: 24px;">
+            <div class="summary-scroll" id="summary-items" style="margin-top: 24px;">
               <!-- Selected parts list rendered by JS -->
             </div>
             
-            <div id="compatibility-warnings" style="margin-top: 24px;">
+            <div class="summary-scroll summary-scroll-warnings" id="compatibility-warnings" style="margin-top: 24px;">
               <!-- Compatibility issues rendered here -->
             </div>
             
