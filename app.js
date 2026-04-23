@@ -123,109 +123,6 @@ function getPartHighlights(part) {
   }
 }
 
-function getPartArtLabel(part) {
-  switch (part.category) {
-    case 'cpu':
-      return 'CPU';
-    case 'motherboard':
-      return 'Board';
-    case 'gpu':
-      return 'GPU';
-    case 'memory':
-      return 'RAM';
-    case 'storage':
-      return 'SSD';
-    case 'psu':
-      return 'PSU';
-    case 'cooler':
-      return 'Cooler';
-    case 'case':
-      return 'Case';
-    default:
-      return 'Part';
-  }
-}
-
-function escapeXml(value) {
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
-}
-
-function getPartArtDataUri(part) {
-  const label = escapeXml(getPartArtLabel(part));
-  const model = escapeXml(part.model);
-  const brand = escapeXml(part.brand);
-  const accent = '#0071e3';
-  const secondary = 'rgba(255,255,255,0.32)';
-  const fanCount = Math.max(1, Math.min(3, Math.round((part.specs?.vramGb || part.specs?.cores || 6) / 8)));
-  const memoryModules = Math.max(1, Math.min(4, part.specs?.modules || Math.round((part.specs?.capacityGb || 32) / 32) || 2));
-  let artwork = '';
-
-  switch (part.category) {
-    case 'cpu':
-      artwork = `<rect x="88" y="38" width="144" height="92" rx="16" fill="#2b2b30" stroke="${accent}" stroke-width="4"/>
-        <rect x="116" y="62" width="88" height="44" rx="10" fill="#111"/>
-        <g stroke="rgba(255,255,255,0.45)" stroke-width="4">${[0,1,2,3,4].map((i)=>`<path d="M ${84 + i*38} 52 v-10"/><path d="M ${84 + i*38} 116 v10"/>`).join('')}</g>`;
-      break;
-    case 'motherboard':
-      artwork = `<rect x="78" y="28" width="164" height="112" rx="12" fill="#242426" stroke="rgba(255,255,255,0.18)"/>
-        <rect x="96" y="46" width="52" height="40" rx="8" fill="${accent}" opacity="0.85"/>
-        <rect x="160" y="46" width="60" height="14" rx="7" fill="rgba(255,255,255,0.4)"/>
-        <rect x="160" y="68" width="44" height="14" rx="7" fill="rgba(255,255,255,0.24)"/>
-        <rect x="98" y="98" width="124" height="22" rx="11" fill="#111"/>`;
-      break;
-    case 'gpu':
-      artwork = `<rect x="52" y="58" width="216" height="64" rx="18" fill="#202024" stroke="rgba(255,255,255,0.18)"/>
-        ${Array.from({length: fanCount}, (_, i) => `<circle cx="${102 + i*58}" cy="90" r="20" fill="#0f0f10" stroke="${accent}" stroke-width="3"/>`).join('')}
-        <rect x="244" y="74" width="14" height="32" rx="7" fill="${secondary}"/>`;
-      break;
-    case 'memory':
-      artwork = Array.from({length: memoryModules}, (_, i) => `<rect x="${72 + i*42}" y="58" width="28" height="74" rx="8" fill="#202024" stroke="${accent}" stroke-width="2"/>
-        <rect x="78" y="72" width="16" height="32" rx="4" fill="rgba(255,255,255,0.38)"/>`).join('');
-      break;
-    case 'storage':
-      artwork = `<rect x="74" y="86" width="172" height="30" rx="15" fill="#202024" stroke="rgba(255,255,255,0.18)"/>
-        <circle cx="100" cy="101" r="8" fill="${accent}"/>
-        <rect x="120" y="95" width="84" height="12" rx="6" fill="rgba(255,255,255,0.42)"/>`;
-      break;
-    case 'psu':
-      artwork = `<rect x="94" y="48" width="132" height="84" rx="12" fill="#202024" stroke="rgba(255,255,255,0.18)"/>
-        <circle cx="132" cy="90" r="24" fill="#0f0f10" stroke="${accent}" stroke-width="3"/>
-        <rect x="172" y="72" width="32" height="36" rx="6" fill="rgba(255,255,255,0.22)"/>`;
-      break;
-    case 'cooler':
-      artwork = `<rect x="88" y="48" width="50" height="84" rx="10" fill="#202024" stroke="rgba(255,255,255,0.16)"/>
-        <rect x="182" y="48" width="50" height="84" rx="10" fill="#202024" stroke="rgba(255,255,255,0.16)"/>
-        <path d="M 138 90 H 182" stroke="${accent}" stroke-width="6" stroke-linecap="round"/>
-        <circle cx="113" cy="90" r="18" fill="#0f0f10" stroke="${secondary}" stroke-width="3"/>
-        <circle cx="207" cy="90" r="18" fill="#0f0f10" stroke="${secondary}" stroke-width="3"/>`;
-      break;
-    case 'case':
-      artwork = `<rect x="116" y="34" width="88" height="112" rx="14" fill="#202024" stroke="rgba(255,255,255,0.18)"/>
-        <rect x="130" y="52" width="60" height="60" rx="10" fill="#111"/>
-        <circle cx="160" cy="82" r="18" fill="none" stroke="${accent}" stroke-width="3"/>
-        <rect x="144" y="120" width="32" height="8" rx="4" fill="rgba(255,255,255,0.28)"/>`;
-      break;
-    default:
-      artwork = `<rect x="84" y="44" width="152" height="88" rx="16" fill="#2b2b30" stroke="rgba(255,255,255,0.18)"/>`;
-      break;
-  }
-
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="${part.model}">
-      <rect width="320" height="320" rx="16" fill="#1d1d1f"/>
-      <rect x="24" y="24" width="272" height="272" rx="18" fill="#2a2a2d" stroke="rgba(255,255,255,0.12)"/>
-      ${artwork}
-      <text x="160" y="278" fill="rgba(255,255,255,0.92)" font-family="SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">${brand}</text>
-      <text x="160" y="300" fill="rgba(255,255,255,0.62)" font-family="SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle">${label}</text>
-    </svg>`;
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
-
 async function init() {
   let baseData = null;
   let premiumData = null;
@@ -258,6 +155,11 @@ async function init() {
   bindFilters();
   renderCategories();
   updateSummary();
+
+  document.getElementById('review-order-btn')?.addEventListener('click', () => {
+    document.getElementById('summary-sidebar')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('compatibility-warnings')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
 }
 
 function bindFilters() {
@@ -424,29 +326,29 @@ function renderCategories() {
       const priceText = part.price.minTwd === part.price.maxTwd
         ? formatTwd(part.price.minTwd)
         : `${formatTwd(part.price.minTwd)} - ${formatTwd(part.price.maxTwd)}`;
+      const interactionLabel = multiSelectCategories.has(category.id)
+        ? `${part.model}. ${quantity > 0 ? `Currently ${quantity} selected.` : 'Not selected yet.'} Activate to add one more.`
+        : `${part.model}. ${isSelected ? 'Currently selected.' : 'Not selected yet.'} Activate to select this part.`;
 
       const actionControls = multiSelectCategories.has(category.id)
         ? `
           <div class="quantity-row" onclick="event.stopPropagation()">
-            <span class="caption">Qty</span>
+            <span class="caption">Quantity</span>
             <div class="quantity-controls">
-              <button class="qty-btn" onclick="changeStorageQuantity('${part.id}', -1)" ${quantity === 0 ? 'disabled' : ''}>−</button>
+              <button class="qty-btn" type="button" aria-label="Remove one ${part.model}" onclick="event.stopPropagation(); changeStorageQuantity('${part.id}', -1);" ${quantity === 0 ? 'disabled' : ''}>−</button>
               <span class="qty-value">${quantity}</span>
-              <button class="qty-btn" onclick="changeStorageQuantity('${part.id}', 1)">+</button>
+              <button class="qty-btn" type="button" aria-label="Add one ${part.model}" onclick="event.stopPropagation(); changeStorageQuantity('${part.id}', 1);">+</button>
             </div>
           </div>
         `
         : `
           <div class="part-card-actions">
-            <span class="caption part-card-status">${isSelected ? 'Selected' : 'Ready to configure'}</span>
+            <span class="caption part-card-status">${isSelected ? 'Selected in your build' : 'Click card to add'}</span>
           </div>
         `;
 
       html += `
-        <div class="card part-card ${isSelected ? 'selected' : ''}">
-          <div class="part-card-media" aria-hidden="true">
-            <img class="part-card-image" alt="${part.model}" src="${getPartArtDataUri(part)}">
-          </div>
+        <div class="card part-card ${isSelected ? 'selected' : ''} ${multiSelectCategories.has(category.id) ? 'part-card-multi' : 'part-card-single'}" role="button" tabindex="0" aria-pressed="${isSelected ? 'true' : 'false'}" aria-label="${interactionLabel}" onclick="activatePartCard('${category.id}', '${part.id}')" onkeydown="handlePartCardKeydown(event, '${category.id}', '${part.id}')">
           <div class="flex justify-between align-center mb-2">
             <span class="caption">${part.brand}</span>
             <div class="selection-meta">
@@ -462,10 +364,6 @@ function renderCategories() {
           <p class="body-emphasis" style="margin-top: 12px;">${priceText}</p>
           ${part.price.assemblyOnly ? '<p class="caption assembly-note" style="margin-top: 8px;">Assembly-only pricing</p>' : ''}
           ${actionControls}
-          <div class="part-card-links">
-            <a href="#build" class="btn-pill part-card-link">Learn more ></a>
-            <button class="btn-pill part-card-link" type="button" onclick="selectPart('${category.id}', '${part.id}')">Shop ></button>
-          </div>
         </div>
       `;
     });
@@ -475,6 +373,24 @@ function renderCategories() {
     container.appendChild(section);
   });
 }
+
+window.activatePartCard = function activatePartCard(categoryId, partId) {
+  if (multiSelectCategories.has(categoryId)) {
+    changeStorageQuantity(partId, 1);
+    return;
+  }
+
+  selectPart(categoryId, partId);
+};
+
+window.handlePartCardKeydown = function handlePartCardKeydown(event, categoryId, partId) {
+  if (event.key !== 'Enter' && event.key !== ' ') {
+    return;
+  }
+
+  event.preventDefault();
+  activatePartCard(categoryId, partId);
+};
 
 window.selectPart = function selectPart(categoryId, partId) {
   if (multiSelectCategories.has(categoryId)) {
