@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flagship Workstation Configurator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Global Navigation -->
+  <nav class="global-nav">
+    <a href="#" class="nav-link">Configurator Pro</a>
+    <div class="nav-links">
+      <a href="#presets" class="nav-link" style="margin-right: 16px;">Reference Builds</a>
+      <a href="#build" class="nav-link">Custom Build</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section-dark" style="padding-top: 120px; min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+    <div class="container text-center">
+      <h1 class="hero-heading">Flagship Performance.<br>No Ceiling.</h1>
+      <p class="section-heading" style="font-size: 24px; font-weight: 400; opacity: 0.8; max-width: 600px; margin: 0 auto 40px;">
+        Configure from mainstream AM5 up to Threadripper PRO, RTX PRO Blackwell, and multi-SSD workstation storage for Blender and Gaussian Splatting.
+      </p>
+      <div>
+        <a href="#presets" class="btn-pill" style="margin-right: 12px; font-size: 17px; padding: 12px 24px;">Learn more</a>
+        <a href="#build" class="btn-primary" style="padding: 12px 24px; text-decoration: none; border-radius: 980px;">Start Building</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reference Builds (Light Section) -->
+  <section id="presets" class="section-light">
+    <div class="container">
+      <h2 class="section-heading">Reference Architectures</h2>
+      <p class="text-center mb-2" style="max-width: 600px; margin: 0 auto 60px;">Curated by professionals. Optimized for your workflow.</p>
+      
+      <div id="presets-container" class="grid-3">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Configurator (Dark Section) -->
+  <section id="build" class="section-dark">
+    <div class="container">
+      <h2 class="section-heading">Custom Configure</h2>
+      <div class="filter-bar" aria-label="Catalog filters">
+        <div class="filter-group">
+          <label class="filter-label" for="search-input">Search parts</label>
+          <input id="search-input" class="filter-input" type="search" placeholder="Search model, brand, or tags">
+        </div>
+        <div class="filter-group">
+          <label class="filter-label" for="workload-filter">Workload focus</label>
+          <select id="workload-filter" class="filter-select">
+            <option value="all">All parts</option>
+            <option value="blender">Blender-first</option>
+            <option value="gs">Gaussian Splatting-ready</option>
+            <option value="budget">Budget-sensitive</option>
+          </select>
+        </div>
+        <div class="filter-group checkbox-group">
+          <label class="checkbox-label">
+            <input id="assembly-only-toggle" type="checkbox">
+            Assembly-only only
+          </label>
+          <label class="checkbox-label">
+            <input id="low-volatility-toggle" type="checkbox">
+            Prefer stable pricing
+          </label>
+          <label class="checkbox-label">
+            <input id="premium-toggle" type="checkbox">
+            Flagship / pro only
+          </label>
+        </div>
+      </div>
+      
+      <div class="configurator-layout">
+        <!-- Main Area: Part Categories -->
+        <div id="categories-container">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Sidebar: Summary -->
+        <div>
+          <div class="sidebar" id="summary-sidebar">
+            <h3 class="tile-heading">Your Workstation</h3>
+            <div id="summary-items" style="margin-top: 24px;">
+              <!-- Selected parts list rendered by JS -->
+            </div>
+            
+            <div id="compatibility-warnings" style="margin-top: 24px;">
+              <!-- Compatibility issues rendered here -->
+            </div>
+            
+            <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;">
+              <p class="caption" style="color: rgba(255,255,255,0.5);">Estimated Total (TWD)</p>
+              <div class="build-total" id="build-total">NT$0</div>
+              <button class="btn-primary" style="width: 100%; padding: 14px; font-weight: 600; border-radius: 980px;">Review Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="fallback.js"></script>
+  <script src="premium-fallback.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
