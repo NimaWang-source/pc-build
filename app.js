@@ -29,6 +29,12 @@ const formatTwd = (amount) => new Intl.NumberFormat('zh-TW', {
   minimumFractionDigits: 0,
 }).format(amount);
 
+const formatPriceRange = (price, quantity = 1) => {
+  const min = price.minTwd * quantity;
+  const max = price.maxTwd * quantity;
+  return min === max ? formatTwd(min) : `${formatTwd(min)} - ${formatTwd(max)}`;
+};
+
 async function fetchJson(path) {
   const res = await fetch(path);
   if (!res.ok) throw new Error(`Failed to load ${path}`);
@@ -324,7 +330,7 @@ function renderCategories() {
     const selectionHint = selectedPart ? ` — ${selectedPart.model}` : '';
 
     let html = `
-      <h3 class="category-header category-header-toggle" data-category="${category.id}" style="cursor:pointer; user-select:none;">
+      <h3 class="category-header category-header-toggle" data-category="${category.id}" role="button" tabindex="0" aria-expanded="${!isCollapsed}" style="cursor:pointer; user-select:none;">
         <span class="category-collapse-icon">${isCollapsed ? '▶' : '▼'}</span>
         ${category.label}${multiSelectCategories.has(category.id) ? ` <span class="caption">(${selectedCount} selected)</span>` : selectionHint ? `<span class="caption" style="font-size:14px;">${selectionHint}</span>` : ''}
       </h3>
@@ -384,13 +390,20 @@ function renderCategories() {
 
     // Bind collapse toggle on header
     const header = section.querySelector('.category-header-toggle');
-    header?.addEventListener('click', () => {
+    const toggleCollapse = () => {
       if (collapsedCategories.has(category.id)) {
         collapsedCategories.delete(category.id);
       } else {
         collapsedCategories.add(category.id);
       }
       renderCategories();
+    };
+    header?.addEventListener('click', toggleCollapse);
+    header?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleCollapse();
+      }
     });
 
     container.appendChild(section);
@@ -520,7 +533,7 @@ function updateSummary() {
         <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1);">
           <div class="flex justify-between align-center" style="gap: 8px;">
             <div class="body-emphasis" style="font-size: 15px;">${part.model}${quantity > 1 ? ` × ${quantity}` : ''}</div>
-            <div class="caption" style="white-space: nowrap;">${quantity > 1 ? `${formatTwd(part.price.minTwd * quantity)}${part.price.maxTwd !== part.price.minTwd ? ` - ${formatTwd(part.price.maxTwd * quantity)}` : ''}` : `${formatTwd(part.price.minTwd)}${part.price.maxTwd !== part.price.minTwd ? ` - ${formatTwd(part.price.maxTwd)}` : ''}`}</div>
+            <div class="caption" style="white-space: nowrap;">${formatPriceRange(part.price, quantity)}</div>
           </div>
         </div>
       `;

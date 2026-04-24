@@ -499,13 +499,6 @@ h1, h2, h3, h4, .display {
   scroll-margin-top: 72px;
 }
 
-.summary-scroll {
-}
-
-.summary-scroll-warnings {
-  margin-top: 0 !important;
-}
-
 .summary-total-block {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -806,10 +799,6 @@ h1, h2, h3, h4, .display {
 
   .sidebar {
     top: 64px;
-  }
-
-  .summary-total-block {
-    background: transparent;
   }
 
   .mobile-total-bar {
