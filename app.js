@@ -328,7 +328,7 @@ function renderCategories() {
         <span class="category-collapse-icon">${isCollapsed ? '▶' : '▼'}</span>
         ${category.label}${multiSelectCategories.has(category.id) ? ` <span class="caption">(${selectedCount} selected)</span>` : selectionHint ? `<span class="caption" style="font-size:14px;">${selectionHint}</span>` : ''}
       </h3>
-      <div class="category-cards-grid grid-2" style="${isCollapsed ? 'display:none;' : ''}">
+      <div class="grid-2" style="${isCollapsed ? 'display:none;' : ''}">
     `;
 
     parts.forEach((part) => {
