@@ -739,29 +739,6 @@
   ],
   "referenceBuilds": [
     {
-      "id": "build-entry-blender",
-      "label": "Entry Blender Workstation",
-      "workloads": ["Blender modeling", "Light Cycles rendering"],
-      "selectedPartIds": [
-        "cpu-intel-ultra5-225",
-        "mb-intel-b860m-entry",
-        "gpu-rtx-5060",
-        "ram-ddr5-32-5600",
-        "ssd-gen4-1tb",
-        "psu-650-bronze",
-        "cooler-air-highend",
-        "case-atx-mid"
-      ],
-      "estimatedTotalTwd": {
-        "min": 39690,
-        "max": 41140
-      },
-      "notes": [
-        "Good low-budget Blender start.",
-        "Not recommended for serious Gaussian Splatting training."
-      ]
-    },
-    {
       "id": "build-balanced-blender",
       "label": "Balanced Blender + Light GS",
       "workloads": ["Blender rendering", "Small Gaussian Splatting scenes"],
