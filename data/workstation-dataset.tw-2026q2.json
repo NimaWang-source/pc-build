@@ -765,59 +765,13 @@
   ],
   "referenceBuilds": [
     {
-      "id": "build-entry-blender",
-      "label": "Entry Blender Workstation",
-      "workloads": ["Blender modeling", "Light Cycles rendering"],
-      "selectedPartIds": [
-        "cpu-intel-ultra5-225",
-        "mb-intel-b860m-entry",
-        "gpu-rtx-5060",
-        "ram-ddr5-32-5600",
-        "ssd-gen4-1tb",
-        "psu-650-bronze",
-        "cooler-air-highend",
-        "case-atx-mid"
-      ],
-      "estimatedTotalTwd": {
-        "min": 43690,
-        "max": 45750
-      },
-      "notes": [
-        "Good low-budget Blender start.",
-        "Not recommended for serious Gaussian Splatting training."
-      ]
-    },
-    {
-      "id": "build-balanced-blender",
-      "label": "Balanced Blender + Light GS",
-      "workloads": ["Blender rendering", "Small Gaussian Splatting scenes"],
-      "selectedPartIds": [
-        "cpu-amd-r7-9700x",
-        "mb-amd-x870e-atx",
-        "gpu-rtx-5070",
-        "ram-ddr5-64-derived",
-        "ssd-gen4-2tb",
-        "psu-850-gold",
-        "cooler-aio-360",
-        "case-airflow-atx"
-      ],
-      "estimatedTotalTwd": {
-        "min": 81600,
-        "max": 93100
-      },
-      "notes": [
-        "Strong mainstream workstation target.",
-        "12GB GPU VRAM remains a compromise for GS."
-      ]
-    },
-    {
       "id": "build-gs-single-gpu",
       "label": "Recommended Single-GPU GS Workstation",
       "workloads": ["Blender rendering", "Gaussian Splatting training"],
       "selectedPartIds": [
-        "cpu-amd-r9-9800x3d",
+        "cpu-amd-r9-9800x3d2",
         "mb-amd-x870e-atx",
-        "gpu-rtx-4090-legacy",
+        "gpu-rtx-5090",
         "ram-ddr5-128-derived",
         "ssd-gen4-2tb",
         "psu-1200-titanium",
