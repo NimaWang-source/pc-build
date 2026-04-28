@@ -52,728 +52,2108 @@
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper PRO 9995WX",
-      "price": {"minTwd": 389950, "maxTwd": 399900, "confidence": "high", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 96, "performanceClass": "absolute-flagship", "notes": ["Absolute no-ceiling workstation CPU tier.", "Best fit for WRX90 plus giant dataset workloads."]},
-      "tags": ["flagship", "threadripper", "workstation", "pro", "enterprise"]
+      "price": {
+        "minTwd": 389950,
+        "maxTwd": 399900,
+        "confidence": "high",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 96,
+        "performanceClass": "absolute-flagship",
+        "notes": [
+          "Absolute no-ceiling workstation CPU tier.",
+          "Best fit for WRX90 plus giant dataset workloads."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "threadripper",
+        "workstation",
+        "pro",
+        "enterprise"
+      ]
     },
     {
       "id": "cpu-amd-tr-pro-9985wx",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper PRO 9985WX",
-      "price": {"minTwd": 265000, "maxTwd": 275850, "confidence": "high", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 64, "performanceClass": "workstation-flagship", "notes": ["Balanced top-tier workstation CPU for no-limit single or dual-GPU tower builds."]},
-      "tags": ["flagship", "threadripper", "workstation", "pro", "recommended"]
+      "price": {
+        "minTwd": 265000,
+        "maxTwd": 275850,
+        "confidence": "high",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 64,
+        "performanceClass": "workstation-flagship",
+        "notes": [
+          "Balanced top-tier workstation CPU for no-limit single or dual-GPU tower builds."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "threadripper",
+        "workstation",
+        "pro",
+        "recommended"
+      ]
     },
     {
       "id": "cpu-amd-tr-pro-9975wx",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper PRO 9975WX",
-      "price": {"minTwd": 136000, "maxTwd": 142650, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 32, "performanceClass": "workstation-premium", "notes": ["Good WRX90 or TRX50 premium workstation entry point."]},
-      "tags": ["flagship", "threadripper", "workstation", "pro"]
+      "price": {
+        "minTwd": 136000,
+        "maxTwd": 142650,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 32,
+        "performanceClass": "workstation-premium",
+        "notes": [
+          "Good WRX90 or TRX50 premium workstation entry point."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "threadripper",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "cpu-amd-tr-pro-9965wx",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper PRO 9965WX",
-      "price": {"minTwd": 98850, "maxTwd": 109999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 24, "performanceClass": "workstation-premium", "notes": ["Useful when you want PRO platform features before stepping into 32C+ pricing."]},
-      "tags": ["threadripper", "workstation", "pro"]
+      "price": {
+        "minTwd": 98850,
+        "maxTwd": 109999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 24,
+        "performanceClass": "workstation-premium",
+        "notes": [
+          "Useful when you want PRO platform features before stepping into 32C+ pricing."
+        ]
+      },
+      "tags": [
+        "threadripper",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "cpu-amd-tr-pro-9955wx",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper PRO 9955WX",
-      "price": {"minTwd": 79999, "maxTwd": 89999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 16, "performanceClass": "workstation-pro", "notes": ["Lowest practical PRO tier in this premium catalog."]},
-      "tags": ["threadripper", "workstation", "pro"]
+      "price": {
+        "minTwd": 79999,
+        "maxTwd": 89999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 16,
+        "performanceClass": "workstation-pro",
+        "notes": [
+          "Lowest practical PRO tier in this premium catalog."
+        ]
+      },
+      "tags": [
+        "threadripper",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "cpu-amd-tr-pro-9945wx",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper PRO 9945WX",
-      "price": {"minTwd": 56550, "maxTwd": 65550, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 12, "performanceClass": "workstation-pro", "notes": ["Still above the user threshold and valid for PRO platform exploration."]},
-      "tags": ["threadripper", "workstation", "pro"]
+      "price": {
+        "minTwd": 56550,
+        "maxTwd": 65550,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 12,
+        "performanceClass": "workstation-pro",
+        "notes": [
+          "Still above the user threshold and valid for PRO platform exploration."
+        ]
+      },
+      "tags": [
+        "threadripper",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "cpu-amd-tr-9980x",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper 9980X",
-      "price": {"minTwd": 119999, "maxTwd": 139999, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 64, "performanceClass": "hedt-flagship", "notes": ["Consumer Threadripper for TRX50-only high-end desktop builds."]},
-      "tags": ["threadripper", "trx50", "hedt", "recommended"]
+      "price": {
+        "minTwd": 119999,
+        "maxTwd": 139999,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 64,
+        "performanceClass": "hedt-flagship",
+        "notes": [
+          "Consumer Threadripper for TRX50-only high-end desktop builds."
+        ]
+      },
+      "tags": [
+        "threadripper",
+        "trx50",
+        "hedt",
+        "recommended"
+      ]
     },
     {
       "id": "cpu-amd-tr-9970x",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper 9970X",
-      "price": {"minTwd": 89999, "maxTwd": 109999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 32, "performanceClass": "hedt-premium", "notes": ["High-end desktop Threadripper aimed at TRX50 workstations."]},
-      "tags": ["threadripper", "trx50", "hedt"]
+      "price": {
+        "minTwd": 89999,
+        "maxTwd": 109999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 32,
+        "performanceClass": "hedt-premium",
+        "notes": [
+          "High-end desktop Threadripper aimed at TRX50 workstations."
+        ]
+      },
+      "tags": [
+        "threadripper",
+        "trx50",
+        "hedt"
+      ]
     },
     {
       "id": "cpu-amd-tr-9960x",
       "category": "cpu",
       "brand": "AMD",
       "model": "Threadripper 9960X",
-      "price": {"minTwd": 59999, "maxTwd": 74999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"cores": 24, "performanceClass": "hedt-premium", "notes": ["Useful for TRX50 creator workstations that do not require PRO-only features."]},
-      "tags": ["threadripper", "trx50", "hedt"]
+      "price": {
+        "minTwd": 59999,
+        "maxTwd": 74999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "cores": 24,
+        "performanceClass": "hedt-premium",
+        "notes": [
+          "Useful for TRX50 creator workstations that do not require PRO-only features."
+        ]
+      },
+      "tags": [
+        "threadripper",
+        "trx50",
+        "hedt"
+      ]
     },
     {
       "id": "mb-asus-wrx90e-sage-se",
       "category": "motherboard",
       "brand": "ASUS",
       "model": "Pro WS WRX90E-SAGE SE",
-      "price": {"minTwd": 47000, "maxTwd": 54900, "confidence": "medium", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "EEB"},
-      "specs": {"platformTier": "wrx90-flagship", "validatedMaxMemoryGb": 2048, "notes": ["Workstation motherboard with huge PCIe and memory capacity."]},
-      "tags": ["flagship", "wrx90", "workstation", "pro"]
+      "price": {
+        "minTwd": 47000,
+        "maxTwd": 54900,
+        "confidence": "medium",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "EEB"
+      },
+      "specs": {
+        "platformTier": "wrx90-flagship",
+        "validatedMaxMemoryGb": 2048,
+        "notes": [
+          "Workstation motherboard with huge PCIe and memory capacity."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "wrx90",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "mb-asrock-wrx90-ws-evo",
       "category": "motherboard",
       "brand": "ASRock",
       "model": "WRX90 WS EVO",
-      "price": {"minTwd": 45000, "maxTwd": 52000, "confidence": "medium", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "EEB"},
-      "specs": {"platformTier": "wrx90-premium", "validatedMaxMemoryGb": 2048, "notes": ["Premium WRX90 alternative with workstation expandability."]},
-      "tags": ["flagship", "wrx90", "workstation", "recommended"]
+      "price": {
+        "minTwd": 45000,
+        "maxTwd": 52000,
+        "confidence": "medium",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "EEB"
+      },
+      "specs": {
+        "platformTier": "wrx90-premium",
+        "validatedMaxMemoryGb": 2048,
+        "notes": [
+          "Premium WRX90 alternative with workstation expandability."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "wrx90",
+        "workstation",
+        "recommended"
+      ]
     },
     {
       "id": "mb-msi-wrx90-edge-wifi",
       "category": "motherboard",
       "brand": "MSI",
       "model": "Pro WRX90-EDGE WiFi",
-      "price": {"minTwd": 19990, "maxTwd": 22990, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "E-ATX"},
-      "specs": {"platformTier": "wrx90", "validatedMaxMemoryGb": 1024, "notes": ["Less common WRX90 board; availability more uncertain than ASUS/ASRock."]},
-      "tags": ["wrx90", "workstation"]
+      "price": {
+        "minTwd": 19990,
+        "maxTwd": 22990,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "E-ATX"
+      },
+      "specs": {
+        "platformTier": "wrx90",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "Less common WRX90 board; availability more uncertain than ASUS/ASRock."
+        ]
+      },
+      "tags": [
+        "wrx90",
+        "workstation"
+      ]
     },
     {
       "id": "mb-gigabyte-wrx90-pro",
       "category": "motherboard",
       "brand": "GIGABYTE",
       "model": "WRX90 Pro",
-      "price": {"minTwd": 19990, "maxTwd": 23990, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "E-ATX"},
-      "specs": {"platformTier": "wrx90", "validatedMaxMemoryGb": 1024, "notes": ["Workstation board option for broader WRX90 coverage in the catalog."]},
-      "tags": ["wrx90", "workstation"]
+      "price": {
+        "minTwd": 19990,
+        "maxTwd": 23990,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "E-ATX"
+      },
+      "specs": {
+        "platformTier": "wrx90",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "Workstation board option for broader WRX90 coverage in the catalog."
+        ]
+      },
+      "tags": [
+        "wrx90",
+        "workstation"
+      ]
     },
     {
       "id": "mb-gigabyte-trx50-ai-top",
       "category": "motherboard",
       "brand": "GIGABYTE",
       "model": "TRX50 AI TOP",
-      "price": {"minTwd": 24990, "maxTwd": 31990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "E-ATX"},
-      "specs": {"platformTier": "trx50-flagship", "validatedMaxMemoryGb": 1024, "notes": ["TRX50 workstation board with strong creator positioning."]},
-      "tags": ["trx50", "threadripper", "workstation", "recommended"]
+      "price": {
+        "minTwd": 24990,
+        "maxTwd": 31990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "E-ATX"
+      },
+      "specs": {
+        "platformTier": "trx50-flagship",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "TRX50 workstation board with strong creator positioning."
+        ]
+      },
+      "tags": [
+        "trx50",
+        "threadripper",
+        "workstation",
+        "recommended"
+      ]
     },
     {
       "id": "mb-gigabyte-trx50-aero-d",
       "category": "motherboard",
       "brand": "GIGABYTE",
       "model": "TRX50 AERO D",
-      "price": {"minTwd": 22990, "maxTwd": 28990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "E-ATX"},
-      "specs": {"platformTier": "trx50-premium", "validatedMaxMemoryGb": 1024, "notes": ["Creator-focused TRX50 board with 10GbE and premium I/O."]},
-      "tags": ["trx50", "threadripper", "workstation"]
+      "price": {
+        "minTwd": 22990,
+        "maxTwd": 28990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "E-ATX"
+      },
+      "specs": {
+        "platformTier": "trx50-premium",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "Creator-focused TRX50 board with 10GbE and premium I/O."
+        ]
+      },
+      "tags": [
+        "trx50",
+        "threadripper",
+        "workstation"
+      ]
     },
     {
       "id": "mb-asus-trx50-sage-wifi",
       "category": "motherboard",
       "brand": "ASUS",
       "model": "Pro WS TRX50-SAGE WIFI",
-      "price": {"minTwd": 23990, "maxTwd": 35190, "confidence": "high", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "CEB"},
-      "specs": {"platformTier": "trx50-flagship", "validatedMaxMemoryGb": 1024, "notes": ["Most recognizable ASUS TRX50 workstation option in Taiwan channels."]},
-      "tags": ["trx50", "threadripper", "workstation", "recommended"]
+      "price": {
+        "minTwd": 23990,
+        "maxTwd": 35190,
+        "confidence": "high",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "CEB"
+      },
+      "specs": {
+        "platformTier": "trx50-flagship",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "Most recognizable ASUS TRX50 workstation option in Taiwan channels."
+        ]
+      },
+      "tags": [
+        "trx50",
+        "threadripper",
+        "workstation",
+        "recommended"
+      ]
     },
     {
       "id": "mb-asrock-trx50-ws",
       "category": "motherboard",
       "brand": "ASRock",
       "model": "TRX50 WS",
-      "price": {"minTwd": 22000, "maxTwd": 31395, "confidence": "high", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "E-ATX"},
-      "specs": {"platformTier": "trx50-premium", "validatedMaxMemoryGb": 1024, "notes": ["Well-rounded TRX50 workstation board."]},
-      "tags": ["trx50", "threadripper", "workstation"]
+      "price": {
+        "minTwd": 22000,
+        "maxTwd": 31395,
+        "confidence": "high",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "E-ATX"
+      },
+      "specs": {
+        "platformTier": "trx50-premium",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "Well-rounded TRX50 workstation board."
+        ]
+      },
+      "tags": [
+        "trx50",
+        "threadripper",
+        "workstation"
+      ]
     },
     {
       "id": "mb-asus-trx50-sage",
       "category": "motherboard",
       "brand": "ASUS",
       "model": "Pro WS TRX50-SAGE",
-      "price": {"minTwd": 22990, "maxTwd": 32990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "CEB"},
-      "specs": {"platformTier": "trx50-premium", "validatedMaxMemoryGb": 1024, "notes": ["WiFi-free TRX50 Sage variant for workstation purists."]},
-      "tags": ["trx50", "threadripper", "workstation"]
+      "price": {
+        "minTwd": 22990,
+        "maxTwd": 32990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "CEB"
+      },
+      "specs": {
+        "platformTier": "trx50-premium",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "WiFi-free TRX50 Sage variant for workstation purists."
+        ]
+      },
+      "tags": [
+        "trx50",
+        "threadripper",
+        "workstation"
+      ]
     },
     {
       "id": "mb-msi-trx50-edge-wifi",
       "category": "motherboard",
       "brand": "MSI",
       "model": "Pro TRX50-EDGE WiFi",
-      "price": {"minTwd": 15990, "maxTwd": 18490, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"socket": "sTR5", "memoryType": "DDR5 ECC RDIMM", "formFactor": "E-ATX"},
-      "specs": {"platformTier": "trx50", "validatedMaxMemoryGb": 1024, "notes": ["Entry TRX50 among workstation boards, but still premium by desktop standards."]},
-      "tags": ["trx50", "threadripper", "workstation"]
+      "price": {
+        "minTwd": 15990,
+        "maxTwd": 18490,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "socket": "sTR5",
+        "memoryType": "DDR5 ECC RDIMM",
+        "formFactor": "E-ATX"
+      },
+      "specs": {
+        "platformTier": "trx50",
+        "validatedMaxMemoryGb": 1024,
+        "notes": [
+          "Entry TRX50 among workstation boards, but still premium by desktop standards."
+        ]
+      },
+      "tags": [
+        "trx50",
+        "threadripper",
+        "workstation"
+      ]
     },
     {
       "id": "gpu-rtx-pro-6000-blackwell",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX PRO 6000 Blackwell",
-      "price": {"minTwd": 210000, "maxTwd": 255000, "confidence": "low", "volatility": "high", "assemblyOnly": false, "pricingMethod": "import-oem-estimate"},
-      "compatibility": {"psuMinW": 1200},
-      "specs": {"vramGb": 96, "cuda": true, "optix": true, "gaussianSplattingTier": "extreme", "notes": ["Ultimate workstation GPU tier with 96GB ECC VRAM."]},
-      "tags": ["flagship", "blackwell", "workstation", "pro", "enterprise"]
+      "price": {
+        "minTwd": 380000,
+        "maxTwd": 380000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false,
+        "pricingMethod": "import-oem-estimate"
+      },
+      "compatibility": {
+        "psuMinW": 1200
+      },
+      "specs": {
+        "vramGb": 96,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "extreme",
+        "notes": [
+          "Ultimate workstation GPU tier with 96GB ECC VRAM."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "blackwell",
+        "workstation",
+        "pro",
+        "enterprise"
+      ]
     },
     {
       "id": "gpu-rtx-pro-6000-ada",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX 6000 Ada",
-      "price": {"minTwd": 212000, "maxTwd": 255000, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 850},
-      "specs": {"vramGb": 48, "cuda": true, "optix": true, "gaussianSplattingTier": "pro", "notes": ["Proven workstation GPU for large Blender scenes and serious GS work."]},
-      "tags": ["flagship", "workstation", "pro", "recommended"]
+      "price": {
+        "minTwd": 212000,
+        "maxTwd": 255000,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 850
+      },
+      "specs": {
+        "vramGb": 48,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "pro",
+        "notes": [
+          "Proven workstation GPU for large Blender scenes and serious GS work."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "pro",
+        "recommended"
+      ]
     },
     {
       "id": "gpu-rtx-pro-5000-blackwell",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX PRO 5000 Blackwell",
-      "price": {"minTwd": 105000, "maxTwd": 126000, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 1000},
-      "specs": {"vramGb": 48, "cuda": true, "optix": true, "gaussianSplattingTier": "pro", "notes": ["48GB Blackwell workstation card for premium content work."]},
-      "tags": ["blackwell", "workstation", "pro"]
+      "price": {
+        "minTwd": 105000,
+        "maxTwd": 126000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 1000
+      },
+      "specs": {
+        "vramGb": 48,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "pro",
+        "notes": [
+          "48GB Blackwell workstation card for premium content work."
+        ]
+      },
+      "tags": [
+        "blackwell",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "gpu-rtx-pro-4500-blackwell",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX PRO 4500 Blackwell",
-      "price": {"minTwd": 66000, "maxTwd": 75000, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 850},
-      "specs": {"vramGb": 24, "cuda": true, "optix": true, "gaussianSplattingTier": "recommended", "notes": ["24GB workstation Blackwell option below 5000/6000 tiers."]},
-      "tags": ["blackwell", "workstation", "pro"]
+      "price": {
+        "minTwd": 66000,
+        "maxTwd": 75000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 850
+      },
+      "specs": {
+        "vramGb": 24,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "recommended",
+        "notes": [
+          "24GB workstation Blackwell option below 5000/6000 tiers."
+        ]
+      },
+      "tags": [
+        "blackwell",
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "gpu-rtx-5090",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "GeForce RTX 5090",
-      "price": {"minTwd": 95000, "maxTwd": 120000, "confidence": "medium", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 1200},
-      "specs": {"vramGb": 32, "cuda": true, "optix": true, "gaussianSplattingTier": "recommended", "notes": ["Top consumer NVIDIA card for Blender and GS if pro boards are unnecessary."]},
-      "tags": ["flagship", "nvidia", "recommended"]
+      "price": {
+        "minTwd": 95000,
+        "maxTwd": 120000,
+        "confidence": "medium",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 1200
+      },
+      "specs": {
+        "vramGb": 32,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "recommended",
+        "notes": [
+          "Top consumer NVIDIA card for Blender and GS if pro boards are unnecessary."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "nvidia",
+        "recommended"
+      ]
     },
     {
       "id": "gpu-rtx-a5000",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX A5000",
-      "price": {"minTwd": 129999, "maxTwd": 189999, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 850},
-      "specs": {"vramGb": 24, "cuda": true, "optix": true, "gaussianSplattingTier": "recommended", "notes": ["Older workstation card but still relevant in Taiwan channels."]},
-      "tags": ["workstation", "pro"]
+      "price": {
+        "minTwd": 129999,
+        "maxTwd": 189999,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 850
+      },
+      "specs": {
+        "vramGb": 24,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "recommended",
+        "notes": [
+          "Older workstation card but still relevant in Taiwan channels."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "gpu-rtx-a4500",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX A4500",
-      "price": {"minTwd": 99999, "maxTwd": 149999, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 750},
-      "specs": {"vramGb": 24, "cuda": true, "optix": true, "gaussianSplattingTier": "recommended", "notes": ["24GB workstation option for large but not extreme scenes."]},
-      "tags": ["workstation", "pro"]
+      "price": {
+        "minTwd": 99999,
+        "maxTwd": 149999,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 750
+      },
+      "specs": {
+        "vramGb": 24,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "recommended",
+        "notes": [
+          "24GB workstation option for large but not extreme scenes."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "gpu-rtx-a4000",
       "category": "gpu",
       "brand": "NVIDIA",
       "model": "RTX A4000",
-      "price": {"minTwd": 79999, "maxTwd": 129999, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"psuMinW": 750},
-      "specs": {"vramGb": 20, "cuda": true, "optix": true, "gaussianSplattingTier": "minimum-viable", "notes": ["Workstation NVIDIA option that still fits pro catalog breadth."]},
-      "tags": ["workstation", "pro"]
+      "price": {
+        "minTwd": 79999,
+        "maxTwd": 129999,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "psuMinW": 750
+      },
+      "specs": {
+        "vramGb": 20,
+        "cuda": true,
+        "optix": true,
+        "gaussianSplattingTier": "minimum-viable",
+        "notes": [
+          "Workstation NVIDIA option that still fits pro catalog breadth."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "pro"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-128",
       "category": "memory",
       "brand": "Kingston / workstation-class",
       "model": "DDR5 ECC RDIMM 128GB Kit (4 x 32GB)",
-      "price": {"minTwd": 42999, "maxTwd": 54999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 128, "speed": "5600 MT/s", "notes": ["Entry RDIMM kit for Threadripper workstation platforms."]},
-      "tags": ["workstation", "ecc"]
+      "price": {
+        "minTwd": 42999,
+        "maxTwd": 54999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 128,
+        "speed": "5600 MT/s",
+        "notes": [
+          "Entry RDIMM kit for Threadripper workstation platforms."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "ecc"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-192",
       "category": "memory",
       "brand": "Kingston / workstation-class",
       "model": "DDR5 ECC RDIMM 192GB Kit (3 x 64GB class)",
-      "price": {"minTwd": 67990, "maxTwd": 79999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 192, "speed": "5600 MT/s", "notes": ["Useful intermediate RDIMM tier in Taiwan availability bands."]},
-      "tags": ["workstation", "ecc"]
+      "price": {
+        "minTwd": 67990,
+        "maxTwd": 79999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 192,
+        "speed": "5600 MT/s",
+        "notes": [
+          "Useful intermediate RDIMM tier in Taiwan availability bands."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "ecc"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-256",
       "category": "memory",
       "brand": "Kingston / workstation-class",
       "model": "DDR5 ECC RDIMM 256GB Kit (8 x 32GB)",
-      "price": {"minTwd": 212000, "maxTwd": 240000, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 256, "speed": "5600 MT/s", "notes": ["Sweet spot for premium workstation builds."]},
-      "tags": ["flagship", "workstation", "ecc", "recommended"]
+      "price": {
+        "minTwd": 212000,
+        "maxTwd": 240000,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 256,
+        "speed": "5600 MT/s",
+        "notes": [
+          "Sweet spot for premium workstation builds."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "ecc",
+        "recommended"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-384",
       "category": "memory",
       "brand": "V-Color / workstation-class",
       "model": "DDR5 ECC RDIMM 384GB Kit (6 x 64GB class)",
-      "price": {"minTwd": 280000, "maxTwd": 340000, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 384, "speed": "5600-6400 MT/s", "notes": ["Heavy workstation tier for caching and simulation headroom."]},
-      "tags": ["flagship", "workstation", "ecc"]
+      "price": {
+        "minTwd": 280000,
+        "maxTwd": 340000,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 384,
+        "speed": "5600-6400 MT/s",
+        "notes": [
+          "Heavy workstation tier for caching and simulation headroom."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "ecc"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-512",
       "category": "memory",
       "brand": "Kingston / workstation-class",
       "model": "DDR5 ECC RDIMM 512GB Kit (8 x 64GB)",
-      "price": {"minTwd": 430000, "maxTwd": 500000, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 512, "speed": "5600-6400 MT/s", "notes": ["Extreme memory tier for unlimited-budget workstations."]},
-      "tags": ["flagship", "workstation", "ecc", "enterprise"]
+      "price": {
+        "minTwd": 430000,
+        "maxTwd": 500000,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 512,
+        "speed": "5600-6400 MT/s",
+        "notes": [
+          "Extreme memory tier for unlimited-budget workstations."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "ecc",
+        "enterprise"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-768",
       "category": "memory",
       "brand": "V-Color / workstation-class",
       "model": "DDR5 ECC RDIMM 768GB Kit (8 x 96GB class)",
-      "price": {"minTwd": 620000, "maxTwd": 760000, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 768, "speed": "5600 MT/s", "notes": ["High-capacity specialty tier for very large datasets."]},
-      "tags": ["flagship", "workstation", "ecc", "enterprise"]
+      "price": {
+        "minTwd": 620000,
+        "maxTwd": 760000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 768,
+        "speed": "5600 MT/s",
+        "notes": [
+          "High-capacity specialty tier for very large datasets."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "ecc",
+        "enterprise"
+      ]
     },
     {
       "id": "ram-ddr5-ecc-rdimm-1024",
       "category": "memory",
       "brand": "Enterprise RDIMM",
       "model": "DDR5 ECC RDIMM 1TB Kit",
-      "price": {"minTwd": 820000, "maxTwd": 980000, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5 ECC RDIMM"},
-      "specs": {"capacityGb": 1024, "speed": "5600 MT/s", "notes": ["No-compromise RDIMM tier for workstation memory ceilings."]},
-      "tags": ["flagship", "workstation", "ecc", "enterprise"]
-    },
-    {
-      "id": "ram-ddr5-udimm-96",
-      "category": "memory",
-      "brand": "Kingston / high-end desktop",
-      "model": "DDR5 96GB Kit (48GB x 2)",
-      "price": {"minTwd": 12999, "maxTwd": 18999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5"},
-      "specs": {"capacityGb": 96, "speed": "6000-6400 MT/s", "notes": ["High-end desktop kit for AM5 / Intel premium builds."]},
-      "tags": ["high-end", "desktop-memory"]
+      "price": {
+        "minTwd": 820000,
+        "maxTwd": 980000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5 ECC RDIMM"
+      },
+      "specs": {
+        "capacityGb": 1024,
+        "speed": "5600 MT/s",
+        "notes": [
+          "No-compromise RDIMM tier for workstation memory ceilings."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "ecc",
+        "enterprise"
+      ]
     },
     {
       "id": "ram-ddr5-udimm-128",
       "category": "memory",
       "brand": "Kingston / high-end desktop",
       "model": "DDR5 128GB Kit (64GB x 2)",
-      "price": {"minTwd": 17999, "maxTwd": 24999, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"memoryType": "DDR5"},
-      "specs": {"capacityGb": 128, "speed": "5600-6000 MT/s", "notes": ["Strong desktop-memory top tier for AM5 and Intel boards."]},
-      "tags": ["high-end", "desktop-memory"]
+      "price": {
+        "minTwd": 17999,
+        "maxTwd": 24999,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "memoryType": "DDR5"
+      },
+      "specs": {
+        "capacityGb": 128,
+        "speed": "5600-6000 MT/s",
+        "notes": [
+          "Strong desktop-memory top tier for AM5 and Intel boards."
+        ]
+      },
+      "tags": [
+        "high-end",
+        "desktop-memory"
+      ]
     },
     {
       "id": "ssd-samsung-990pro-4tb",
       "category": "storage",
       "brand": "Samsung",
       "model": "990 Pro 4TB",
-      "price": {"minTwd": 12000, "maxTwd": 14000, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 4, "generation": "Gen4", "notes": ["Excellent boot / active project SSD for premium workstation builds."]},
-      "tags": ["premium", "storage", "recommended"]
+      "price": {
+        "minTwd": 12000,
+        "maxTwd": 14000,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 4,
+        "generation": "Gen4",
+        "notes": [
+          "Excellent boot / active project SSD for premium workstation builds."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage",
+        "recommended"
+      ]
     },
     {
       "id": "ssd-sabrent-rocket5-8tb",
       "category": "storage",
       "brand": "Sabrent",
       "model": "Rocket 5 8TB",
-      "price": {"minTwd": 20000, "maxTwd": 24000, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 8, "generation": "Gen5", "notes": ["Large premium SSD for dataset pools."]},
-      "tags": ["flagship", "storage", "multi-ssd", "premium"]
+      "price": {
+        "minTwd": 20000,
+        "maxTwd": 24000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 8,
+        "generation": "Gen5",
+        "notes": [
+          "Large premium SSD for dataset pools."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "storage",
+        "multi-ssd",
+        "premium"
+      ]
     },
     {
       "id": "ssd-samsung-9100pro-8tb",
       "category": "storage",
       "brand": "Samsung",
       "model": "9100 PRO 8TB",
-      "price": {"minTwd": 16990, "maxTwd": 22990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 8, "generation": "Gen5", "notes": ["Taiwan-visible Samsung high-end Gen5 SSD tier."]},
-      "tags": ["premium", "storage", "recommended"]
+      "price": {
+        "minTwd": 16990,
+        "maxTwd": 22990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 8,
+        "generation": "Gen5",
+        "notes": [
+          "Taiwan-visible Samsung high-end Gen5 SSD tier."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage",
+        "recommended"
+      ]
     },
     {
       "id": "ssd-wd-sn8100-8tb",
       "category": "storage",
       "brand": "WD",
       "model": "WD_Black SN8100 8TB",
-      "price": {"minTwd": 15990, "maxTwd": 21990, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 8, "generation": "Gen5", "notes": ["High-end Gen5 option with broad gaming/workstation crossover appeal."]},
-      "tags": ["premium", "storage"]
+      "price": {
+        "minTwd": 15990,
+        "maxTwd": 21990,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 8,
+        "generation": "Gen5",
+        "notes": [
+          "High-end Gen5 option with broad gaming/workstation crossover appeal."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage"
+      ]
     },
     {
       "id": "ssd-kingston-renegade-g5-8tb",
       "category": "storage",
       "brand": "Kingston",
       "model": "FURY Renegade G5 8TB",
-      "price": {"minTwd": 14990, "maxTwd": 19990, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 8, "generation": "Gen5", "notes": ["Less common but plausible premium Gen5 SSD band in Taiwan channels."]},
-      "tags": ["premium", "storage"]
+      "price": {
+        "minTwd": 14990,
+        "maxTwd": 19990,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 8,
+        "generation": "Gen5",
+        "notes": [
+          "Less common but plausible premium Gen5 SSD band in Taiwan channels."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage"
+      ]
     },
     {
       "id": "ssd-msi-m580-4tb",
       "category": "storage",
       "brand": "MSI",
       "model": "SPATIUM M580 4TB",
-      "price": {"minTwd": 16090, "maxTwd": 18590, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 4, "generation": "Gen5", "notes": ["MSI Store Taiwan-visible PCIe 5.0 SSD option."]},
-      "tags": ["premium", "storage"]
+      "price": {
+        "minTwd": 16090,
+        "maxTwd": 18590,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 4,
+        "generation": "Gen5",
+        "notes": [
+          "MSI Store Taiwan-visible PCIe 5.0 SSD option."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage"
+      ]
     },
     {
       "id": "ssd-teamgroup-gepro-8tb",
       "category": "storage",
       "brand": "TeamGroup",
       "model": "T-FORCE GE PRO 8TB",
-      "price": {"minTwd": 19990, "maxTwd": 25990, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 8, "generation": "Gen5", "notes": ["Large-capacity Gen5 storage for heavy project pools."]},
-      "tags": ["premium", "storage"]
+      "price": {
+        "minTwd": 19990,
+        "maxTwd": 25990,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 8,
+        "generation": "Gen5",
+        "notes": [
+          "Large-capacity Gen5 storage for heavy project pools."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage"
+      ]
     },
     {
       "id": "ssd-crucial-t705-4tb",
       "category": "storage",
       "brand": "Crucial",
       "model": "T705 4TB",
-      "price": {"minTwd": 13990, "maxTwd": 18990, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"interface": "M.2 NVMe"},
-      "specs": {"capacityTb": 4, "generation": "Gen5", "notes": ["Fast Gen5 SSD option to round out the premium catalog."]},
-      "tags": ["premium", "storage"]
+      "price": {
+        "minTwd": 13990,
+        "maxTwd": 18990,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "interface": "M.2 NVMe"
+      },
+      "specs": {
+        "capacityTb": 4,
+        "generation": "Gen5",
+        "notes": [
+          "Fast Gen5 SSD option to round out the premium catalog."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage"
+      ]
     },
     {
       "id": "psu-2000-titanium",
       "category": "psu",
       "brand": "Seasonic / workstation-class",
       "model": "2000W 80+ Titanium PSU",
-      "price": {"minTwd": 15000, "maxTwd": 22000, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 2000, "efficiency": "80+ Titanium"},
-      "specs": {"notes": ["Correct PSU class for Blackwell workstation builds and future lane-heavy expansion."]},
-      "tags": ["flagship", "workstation", "recommended"]
+      "price": {
+        "minTwd": 15000,
+        "maxTwd": 22000,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 2000,
+        "efficiency": "80+ Titanium"
+      },
+      "specs": {
+        "notes": [
+          "Correct PSU class for Blackwell workstation builds and future lane-heavy expansion."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "recommended"
+      ]
     },
     {
       "id": "psu-rog-1200-platinum",
       "category": "psu",
       "brand": "ASUS",
       "model": "ROG STRIX 1200W Platinum",
-      "price": {"minTwd": 6990, "maxTwd": 8990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 1200, "efficiency": "80+ Platinum"},
-      "specs": {"notes": ["Good Taiwan-friendly premium PSU tier."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 6990,
+        "maxTwd": 8990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 1200,
+        "efficiency": "80+ Platinum"
+      },
+      "specs": {
+        "notes": [
+          "Good Taiwan-friendly premium PSU tier."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "psu-corsair-hx1500i",
       "category": "psu",
       "brand": "Corsair",
       "model": "HX1500i",
-      "price": {"minTwd": 7990, "maxTwd": 10990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 1500, "efficiency": "80+ Platinum"},
-      "specs": {"notes": ["Popular premium PSU for very high-end GPU builds."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 7990,
+        "maxTwd": 10990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 1500,
+        "efficiency": "80+ Platinum"
+      },
+      "specs": {
+        "notes": [
+          "Popular premium PSU for very high-end GPU builds."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "psu-evga-1600-p2",
       "category": "psu",
       "brand": "EVGA",
       "model": "SuperNOVA 1600 P2",
-      "price": {"minTwd": 8990, "maxTwd": 11990, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 1600, "efficiency": "80+ Platinum"},
-      "specs": {"notes": ["High-wattage option when 1200W feels too tight."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 8990,
+        "maxTwd": 11990,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 1600,
+        "efficiency": "80+ Platinum"
+      },
+      "specs": {
+        "notes": [
+          "High-wattage option when 1200W feels too tight."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "psu-seasonic-tx-1600",
       "category": "psu",
       "brand": "Seasonic",
       "model": "PRIME TX-1600",
-      "price": {"minTwd": 9990, "maxTwd": 12990, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 1600, "efficiency": "80+ Titanium"},
-      "specs": {"notes": ["Seasonic premium PSU tier for heavy workstation loads."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 9990,
+        "maxTwd": 12990,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 1600,
+        "efficiency": "80+ Titanium"
+      },
+      "specs": {
+        "notes": [
+          "Seasonic premium PSU tier for heavy workstation loads."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "psu-bequiet-1200-platinum",
       "category": "psu",
       "brand": "be quiet!",
       "model": "Straight Power 12 1200W",
-      "price": {"minTwd": 7490, "maxTwd": 9490, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 1200, "efficiency": "80+ Platinum"},
-      "specs": {"notes": ["Quiet premium PSU for premium single-GPU towers."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 7490,
+        "maxTwd": 9490,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 1200,
+        "efficiency": "80+ Platinum"
+      },
+      "specs": {
+        "notes": [
+          "Quiet premium PSU for premium single-GPU towers."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "psu-asus-thor-1600t",
       "category": "psu",
       "brand": "ASUS",
       "model": "ROG Thor 1600T",
-      "price": {"minTwd": 14990, "maxTwd": 18990, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"wattage": 1600, "efficiency": "80+ Titanium"},
-      "specs": {"notes": ["Luxury flagship PSU tier for showcase workstations."]},
-      "tags": ["flagship", "workstation", "premium"]
+      "price": {
+        "minTwd": 14990,
+        "maxTwd": 18990,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 1600,
+        "efficiency": "80+ Titanium"
+      },
+      "specs": {
+        "notes": [
+          "Luxury flagship PSU tier for showcase workstations."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "psu-seasonic-3000-titanium",
       "category": "psu",
       "brand": "Seasonic",
       "model": "3000W Titanium PSU",
-      "price": {"minTwd": 26000, "maxTwd": 36000, "confidence": "low", "volatility": "high", "assemblyOnly": false},
-      "compatibility": {"wattage": 3000, "efficiency": "80+ Titanium"},
-      "specs": {"notes": ["Extreme PSU option for future multi-GPU expansion planning."]},
-      "tags": ["flagship", "workstation", "enterprise"]
+      "price": {
+        "minTwd": 26000,
+        "maxTwd": 36000,
+        "confidence": "low",
+        "volatility": "high",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "wattage": 3000,
+        "efficiency": "80+ Titanium"
+      },
+      "specs": {
+        "notes": [
+          "Extreme PSU option for future multi-GPU expansion planning."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "enterprise"
+      ]
     },
     {
       "id": "cooler-str5-aio-420",
       "category": "cooler",
       "brand": "EK / Arctic / workstation-class",
       "model": "sTR5 420mm AIO Liquid Cooler",
-      "price": {"minTwd": 7000, "maxTwd": 12000, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["sTR5"], "requiresCaseRadiatorSupport": "420mm"},
-      "specs": {"coolingClass": "workstation-extreme", "notes": ["Needed for top Threadripper PRO thermal envelopes."]},
-      "tags": ["flagship", "aio", "workstation"]
+      "price": {
+        "minTwd": 7000,
+        "maxTwd": 12000,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "sTR5"
+        ],
+        "requiresCaseRadiatorSupport": "420mm"
+      },
+      "specs": {
+        "coolingClass": "workstation-extreme",
+        "notes": [
+          "Needed for top Threadripper PRO thermal envelopes."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "aio",
+        "workstation"
+      ]
     },
     {
       "id": "cooler-noctua-u14s-tr5",
       "category": "cooler",
       "brand": "Noctua",
       "model": "NH-U14S TR5-SP6",
-      "price": {"minTwd": 4990, "maxTwd": 6490, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["sTR5"]},
-      "specs": {"coolingClass": "workstation-air", "notes": ["Quiet premium air cooler for sTR5 platforms."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 4990,
+        "maxTwd": 6490,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "sTR5"
+        ]
+      },
+      "specs": {
+        "coolingClass": "workstation-air",
+        "notes": [
+          "Quiet premium air cooler for sTR5 platforms."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "cooler-noctua-d9-tr5",
       "category": "cooler",
       "brand": "Noctua",
       "model": "NH-D9 TR5-SP6 4U",
-      "price": {"minTwd": 3990, "maxTwd": 5490, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["sTR5"]},
-      "specs": {"coolingClass": "workstation-air", "notes": ["Compact sTR5 air cooler for tighter cases."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 3990,
+        "maxTwd": 5490,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "sTR5"
+        ]
+      },
+      "specs": {
+        "coolingClass": "workstation-air",
+        "notes": [
+          "Compact sTR5 air cooler for tighter cases."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "cooler-bequiet-darkrock-pro-tr4",
       "category": "cooler",
       "brand": "be quiet!",
       "model": "Dark Rock Pro TR4",
-      "price": {"minTwd": 3490, "maxTwd": 4990, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["sTR5"]},
-      "specs": {"coolingClass": "workstation-air", "notes": ["Legacy-branded cooler often adapted into new sTR5 coverage discussions."]},
-      "tags": ["workstation", "premium"]
+      "price": {
+        "minTwd": 3490,
+        "maxTwd": 4990,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "sTR5"
+        ]
+      },
+      "specs": {
+        "coolingClass": "workstation-air",
+        "notes": [
+          "Legacy-branded cooler often adapted into new sTR5 coverage discussions."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "premium"
+      ]
     },
     {
       "id": "cooler-bequiet-darkrock-pro5-str5",
       "category": "cooler",
       "brand": "be quiet!",
       "model": "Dark Rock Pro 5 + sTR5 bracket",
-      "price": {"minTwd": 2790, "maxTwd": 3690, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["AM5", "LGA1851", "sTR5"]},
-      "specs": {"coolingClass": "high-end-air", "notes": ["High-end air option with bracket path for workstation use."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 2790,
+        "maxTwd": 3690,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "AM5",
+          "LGA1851",
+          "sTR5"
+        ]
+      },
+      "specs": {
+        "coolingClass": "high-end-air",
+        "notes": [
+          "High-end air option with bracket path for workstation use."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     },
     {
       "id": "cooler-rog-ryuo-iii-360",
       "category": "cooler",
       "brand": "ASUS",
       "model": "ROG Ryuo III 360",
-      "price": {"minTwd": 5990, "maxTwd": 7990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["AM5", "LGA1851"], "requiresCaseRadiatorSupport": "360mm"},
-      "specs": {"coolingClass": "aio-premium", "notes": ["Premium desktop AIO for high-end AM5 and Intel rigs."]},
-      "tags": ["premium", "aio"]
+      "price": {
+        "minTwd": 5990,
+        "maxTwd": 7990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "AM5",
+          "LGA1851"
+        ],
+        "requiresCaseRadiatorSupport": "360mm"
+      },
+      "specs": {
+        "coolingClass": "aio-premium",
+        "notes": [
+          "Premium desktop AIO for high-end AM5 and Intel rigs."
+        ]
+      },
+      "tags": [
+        "premium",
+        "aio"
+      ]
     },
     {
       "id": "cooler-alphacool-eisbaer-lt240-tr5",
       "category": "cooler",
       "brand": "Alphacool",
       "model": "Eisbaer LT240 TR5",
-      "price": {"minTwd": 4990, "maxTwd": 6490, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["sTR5"], "requiresCaseRadiatorSupport": "240mm"},
-      "specs": {"coolingClass": "workstation-aio", "notes": ["TR5-targeted liquid cooling option."]},
-      "tags": ["workstation", "aio"]
+      "price": {
+        "minTwd": 4990,
+        "maxTwd": 6490,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "sTR5"
+        ],
+        "requiresCaseRadiatorSupport": "240mm"
+      },
+      "specs": {
+        "coolingClass": "workstation-aio",
+        "notes": [
+          "TR5-targeted liquid cooling option."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "aio"
+      ]
     },
     {
       "id": "cooler-arctic-liquid-freezer-iii-420-tr5",
       "category": "cooler",
       "brand": "Arctic",
       "model": "Liquid Freezer III 420 TR5",
-      "price": {"minTwd": 6990, "maxTwd": 8990, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportedSockets": ["sTR5"], "requiresCaseRadiatorSupport": "420mm"},
-      "specs": {"coolingClass": "workstation-aio", "notes": ["Strong cooling tier for top sTR5 workstation CPUs."]},
-      "tags": ["workstation", "aio", "premium"]
+      "price": {
+        "minTwd": 6990,
+        "maxTwd": 8990,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportedSockets": [
+          "sTR5"
+        ],
+        "requiresCaseRadiatorSupport": "420mm"
+      },
+      "specs": {
+        "coolingClass": "workstation-aio",
+        "notes": [
+          "Strong cooling tier for top sTR5 workstation CPUs."
+        ]
+      },
+      "tags": [
+        "workstation",
+        "aio",
+        "premium"
+      ]
     },
     {
       "id": "case-fulltower-workstation",
       "category": "case",
       "brand": "Workstation-class",
       "model": "Full Tower Workstation Case",
-      "price": {"minTwd": 13000, "maxTwd": 25000, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "mATX", "EEB"], "radiatorSupport": ["360mm", "420mm"]},
-      "specs": {"notes": ["Required class of chassis for WRX90, huge GPUs, and multi-SSD airflow."]},
-      "tags": ["flagship", "workstation", "full-tower"]
+      "price": {
+        "minTwd": 13000,
+        "maxTwd": 25000,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "mATX",
+          "EEB"
+        ],
+        "radiatorSupport": [
+          "360mm",
+          "420mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Required class of chassis for WRX90, huge GPUs, and multi-SSD airflow."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "workstation",
+        "full-tower"
+      ]
     },
     {
       "id": "case-rog-helios-ii",
       "category": "case",
       "brand": "ASUS",
       "model": "ROG Strix Helios II GX601S",
-      "price": {"minTwd": 9890, "maxTwd": 11990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "E-ATX", "EEB"], "radiatorSupport": ["360mm", "420mm"]},
-      "specs": {"notes": ["Premium full-tower suitable for workstation-scale layouts."]},
-      "tags": ["flagship", "premium"]
+      "price": {
+        "minTwd": 9890,
+        "maxTwd": 11990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "E-ATX",
+          "EEB"
+        ],
+        "radiatorSupport": [
+          "360mm",
+          "420mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Premium full-tower suitable for workstation-scale layouts."
+        ]
+      },
+      "tags": [
+        "flagship",
+        "premium"
+      ]
     },
     {
       "id": "case-corsair-5000t-rgb",
       "category": "case",
       "brand": "Corsair",
       "model": "5000T RGB",
-      "price": {"minTwd": 7990, "maxTwd": 9990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "E-ATX"], "radiatorSupport": ["360mm"]},
-      "specs": {"notes": ["Premium chassis with strong airflow and cable routing."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 7990,
+        "maxTwd": 9990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "E-ATX"
+        ],
+        "radiatorSupport": [
+          "360mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Premium chassis with strong airflow and cable routing."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     },
     {
       "id": "case-corsair-570x-rgb",
       "category": "case",
       "brand": "Corsair",
       "model": "Crystal 570X RGB",
-      "price": {"minTwd": 4990, "maxTwd": 6490, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "mATX"], "radiatorSupport": ["360mm"]},
-      "specs": {"notes": ["Older but still premium enclosure option in Taiwan channels."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 4990,
+        "maxTwd": 6490,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "360mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Older but still premium enclosure option in Taiwan channels."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     },
     {
       "id": "case-lianli-lancool-216-rgb",
       "category": "case",
       "brand": "Lian Li",
       "model": "Lancool 216 RGB",
-      "price": {"minTwd": 2990, "maxTwd": 3990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "mATX"], "radiatorSupport": ["360mm"]},
-      "specs": {"notes": ["Airflow-focused chassis that remains viable for premium single-GPU desktops."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 2990,
+        "maxTwd": 3990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "360mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Airflow-focused chassis that remains viable for premium single-GPU desktops."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     },
     {
       "id": "case-jonsbo-n6",
       "category": "case",
       "brand": "Jonsbo",
       "model": "N6",
-      "price": {"minTwd": 2990, "maxTwd": 5990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "mATX"], "radiatorSupport": ["280mm"]},
-      "specs": {"notes": ["Modular case with storage-friendly layout."]},
-      "tags": ["premium", "storage"]
+      "price": {
+        "minTwd": 2990,
+        "maxTwd": 5990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "280mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Modular case with storage-friendly layout."
+        ]
+      },
+      "tags": [
+        "premium",
+        "storage"
+      ]
     },
     {
       "id": "case-hyte-y60-mesh",
       "category": "case",
       "brand": "HYTE",
       "model": "Y60 Modern Mesh",
-      "price": {"minTwd": 4890, "maxTwd": 5990, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "mATX"], "radiatorSupport": ["360mm"]},
-      "specs": {"notes": ["Premium showcase case with good cable routing."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 4890,
+        "maxTwd": 5990,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "360mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Premium showcase case with good cable routing."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     },
     {
       "id": "case-thermaltake-tower-200",
       "category": "case",
       "brand": "Thermaltake",
       "model": "The Tower 200 Mesh",
-      "price": {"minTwd": 1890, "maxTwd": 2590, "confidence": "medium", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["mATX"], "radiatorSupport": ["240mm"]},
-      "specs": {"notes": ["Compact but premium-looking case for smaller premium builds."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 1890,
+        "maxTwd": 2590,
+        "confidence": "medium",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "240mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Compact but premium-looking case for smaller premium builds."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     },
     {
       "id": "case-fractal-north-xl",
       "category": "case",
       "brand": "Fractal Design",
       "model": "North XL",
-      "price": {"minTwd": 5990, "maxTwd": 7990, "confidence": "low", "volatility": "medium", "assemblyOnly": false},
-      "compatibility": {"supportsMotherboard": ["ATX", "E-ATX"], "radiatorSupport": ["360mm"]},
-      "specs": {"notes": ["Premium airflow-focused case with more room than standard mid-towers."]},
-      "tags": ["premium"]
+      "price": {
+        "minTwd": 5990,
+        "maxTwd": 7990,
+        "confidence": "low",
+        "volatility": "medium",
+        "assemblyOnly": false
+      },
+      "compatibility": {
+        "supportsMotherboard": [
+          "ATX",
+          "E-ATX"
+        ],
+        "radiatorSupport": [
+          "360mm"
+        ]
+      },
+      "specs": {
+        "notes": [
+          "Premium airflow-focused case with more room than standard mid-towers."
+        ]
+      },
+      "tags": [
+        "premium"
+      ]
     }
   ],
   "referenceBuilds": [
     {
       "id": "build-trx50-creator",
       "label": "TRX50 Creator Tower",
-      "workloads": ["Blender rendering", "High-end desktop", "Prosumer GS"],
-      "selectedPartIds": ["cpu-amd-tr-9970x", "mb-gigabyte-trx50-ai-top", "gpu-rtx-5090", "ram-ddr5-ecc-rdimm-192", "ssd-samsung-9100pro-8tb", "ssd-crucial-t705-4tb", "psu-corsair-hx1500i", "cooler-rog-ryuo-iii-360", "case-corsair-5000t-rgb"],
-      "estimatedTotalTwd": {"min": 330929, "max": 412938},
-      "notes": ["TRX50 build for users who want Threadripper scale without WRX90 pricing."],
-      "tags": ["trx50", "threadripper", "multi-ssd"]
+      "workloads": [
+        "Blender rendering",
+        "High-end desktop",
+        "Prosumer GS"
+      ],
+      "selectedPartIds": [
+        "cpu-amd-tr-9970x",
+        "mb-gigabyte-trx50-ai-top",
+        "gpu-rtx-5090",
+        "ram-ddr5-ecc-rdimm-192",
+        "ssd-samsung-9100pro-8tb",
+        "ssd-crucial-t705-4tb",
+        "psu-corsair-hx1500i",
+        "cooler-rog-ryuo-iii-360",
+        "case-corsair-5000t-rgb"
+      ],
+      "estimatedTotalTwd": {
+        "min": 330929,
+        "max": 412938
+      },
+      "notes": [
+        "TRX50 build for users who want Threadripper scale without WRX90 pricing."
+      ],
+      "tags": [
+        "trx50",
+        "threadripper",
+        "multi-ssd"
+      ]
     },
     {
       "id": "build-threadripper-pro-studio",
       "label": "Threadripper Pro Studio",
-      "workloads": ["Blender rendering", "Large asset builds", "Professional GS"],
-      "selectedPartIds": ["cpu-amd-tr-pro-9985wx", "mb-asrock-wrx90-ws-evo", "gpu-rtx-pro-6000-ada", "ram-ddr5-ecc-rdimm-256", "ssd-samsung-990pro-4tb", "ssd-sabrent-rocket5-8tb", "psu-2000-titanium", "cooler-str5-aio-420", "case-fulltower-workstation"],
-      "estimatedTotalTwd": {"min": 801000, "max": 919850},
-      "notes": ["High-end workstation with dual SSD layout."],
-      "tags": ["flagship", "threadripper", "multi-ssd"]
+      "workloads": [
+        "Blender rendering",
+        "Large asset builds",
+        "Professional GS"
+      ],
+      "selectedPartIds": [
+        "cpu-amd-tr-pro-9985wx",
+        "mb-asrock-wrx90-ws-evo",
+        "gpu-rtx-pro-6000-ada",
+        "ram-ddr5-ecc-rdimm-256",
+        "ssd-samsung-990pro-4tb",
+        "ssd-sabrent-rocket5-8tb",
+        "psu-2000-titanium",
+        "cooler-str5-aio-420",
+        "case-fulltower-workstation"
+      ],
+      "estimatedTotalTwd": {
+        "min": 801000,
+        "max": 919850
+      },
+      "notes": [
+        "High-end workstation with dual SSD layout."
+      ],
+      "tags": [
+        "flagship",
+        "threadripper",
+        "multi-ssd"
+      ]
     },
     {
       "id": "build-blackwell-flagship",
       "label": "Blackwell Flagship Tower",
-      "workloads": ["Blender hero scenes", "Extreme Gaussian Splatting", "No-limit workstation"],
-      "selectedPartIds": ["cpu-amd-tr-pro-9995wx", "mb-asus-wrx90e-sage-se", "gpu-rtx-pro-6000-blackwell", "ram-ddr5-ecc-rdimm-512", "ssd-samsung-990pro-4tb", "ssd-sabrent-rocket5-8tb", "ssd-sabrent-rocket5-8tb", "psu-2000-titanium", "cooler-str5-aio-420", "case-fulltower-workstation"],
-      "estimatedTotalTwd": {"min": 1163950, "max": 1330800},
-      "notes": ["96GB VRAM flagship with a 20TB SSD pool."],
-      "tags": ["flagship", "blackwell", "enterprise", "multi-ssd"]
+      "workloads": [
+        "Blender hero scenes",
+        "Extreme Gaussian Splatting",
+        "No-limit workstation"
+      ],
+      "selectedPartIds": [
+        "cpu-amd-tr-pro-9995wx",
+        "mb-asus-wrx90e-sage-se",
+        "gpu-rtx-pro-6000-blackwell",
+        "ram-ddr5-ecc-rdimm-512",
+        "ssd-samsung-990pro-4tb",
+        "ssd-sabrent-rocket5-8tb",
+        "ssd-sabrent-rocket5-8tb",
+        "psu-2000-titanium",
+        "cooler-str5-aio-420",
+        "case-fulltower-workstation"
+      ],
+      "estimatedTotalTwd": {
+        "min": 1333950,
+        "max": 1455800
+      },
+      "notes": [
+        "96GB VRAM flagship with a 20TB SSD pool."
+      ],
+      "tags": [
+        "flagship",
+        "blackwell",
+        "enterprise",
+        "multi-ssd"
+      ]
     },
     {
       "id": "build-rdimm-memory-monster",
       "label": "RDIMM Memory Monster",
-      "workloads": ["Huge datasets", "GS experimentation", "Workstation memory ceiling"],
-      "selectedPartIds": ["cpu-amd-tr-pro-9975wx", "mb-asus-wrx90e-sage-se", "gpu-rtx-pro-5000-blackwell", "ram-ddr5-ecc-rdimm-1024", "ssd-samsung-9100pro-8tb", "ssd-wd-sn8100-8tb", "psu-asus-thor-1600t", "cooler-arctic-liquid-freezer-iii-420-tr5", "case-rog-helios-ii"],
-      "estimatedTotalTwd": {"min": 1172850, "max": 1388500},
-      "notes": ["Prioritizes giant memory pools and premium I/O over pure GPU extremity."],
-      "tags": ["flagship", "wrx90", "memory-heavy"]
+      "workloads": [
+        "Huge datasets",
+        "GS experimentation",
+        "Workstation memory ceiling"
+      ],
+      "selectedPartIds": [
+        "cpu-amd-tr-pro-9975wx",
+        "mb-asus-wrx90e-sage-se",
+        "gpu-rtx-pro-5000-blackwell",
+        "ram-ddr5-ecc-rdimm-1024",
+        "ssd-samsung-9100pro-8tb",
+        "ssd-wd-sn8100-8tb",
+        "psu-asus-thor-1600t",
+        "cooler-arctic-liquid-freezer-iii-420-tr5",
+        "case-rog-helios-ii"
+      ],
+      "estimatedTotalTwd": {
+        "min": 1172850,
+        "max": 1388500
+      },
+      "notes": [
+        "Prioritizes giant memory pools and premium I/O over pure GPU extremity."
+      ],
+      "tags": [
+        "flagship",
+        "wrx90",
+        "memory-heavy"
+      ]
     }
   ]
 }

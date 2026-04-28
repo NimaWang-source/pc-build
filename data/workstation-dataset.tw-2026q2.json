@@ -100,106 +100,6 @@
   ],
   "parts": [
     {
-      "id": "cpu-intel-ultra5-225",
-      "category": "cpu",
-      "brand": "Intel",
-      "model": "Core Ultra 5 225",
-      "price": {
-        "minTwd": 5280,
-        "maxTwd": 5280,
-        "confidence": "high",
-        "volatility": "low",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "socket": "LGA1851",
-        "memoryType": "DDR5"
-      },
-      "specs": {
-        "performanceClass": "entry-workstation",
-        "notes": [
-          "Good budget Blender entry point.",
-          "Not ideal for heavy Gaussian Splatting preprocessing."
-        ]
-      },
-      "tags": ["budget", "blender-entry"]
-    },
-    {
-      "id": "cpu-intel-ultra7-265k",
-      "category": "cpu",
-      "brand": "Intel",
-      "model": "Core Ultra 7 265K",
-      "price": {
-        "minTwd": 9700,
-        "maxTwd": 10600,
-        "confidence": "medium",
-        "volatility": "low",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "socket": "LGA1851",
-        "memoryType": "DDR5"
-      },
-      "specs": {
-        "performanceClass": "balanced-workstation",
-        "notes": [
-          "Good mixed Blender viewport and render CPU choice.",
-          "Suitable for moderate COLMAP preprocessing loads."
-        ]
-      },
-      "tags": ["balanced", "intel"]
-    },
-    {
-      "id": "cpu-amd-r7-9700x",
-      "category": "cpu",
-      "brand": "AMD",
-      "model": "Ryzen 7 9700X",
-      "price": {
-        "minTwd": 11000,
-        "maxTwd": 11000,
-        "confidence": "medium",
-        "volatility": "low",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "socket": "AM5",
-        "memoryType": "DDR5"
-      },
-      "specs": {
-        "performanceClass": "balanced-workstation",
-        "notes": [
-          "Strong single-GPU workstation value.",
-          "AM5 platform is enough for Blender and smaller Gaussian Splatting scenes."
-        ]
-      },
-      "tags": ["balanced", "amd", "am5"]
-    },
-    {
-      "id": "cpu-amd-r9-9800x3d",
-      "category": "cpu",
-      "brand": "AMD",
-      "model": "Ryzen 9 9800X3D",
-      "price": {
-        "minTwd": 15600,
-        "maxTwd": 15600,
-        "confidence": "high",
-        "volatility": "low",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "socket": "AM5",
-        "memoryType": "DDR5"
-      },
-      "specs": {
-        "performanceClass": "high-end-single-gpu",
-        "notes": [
-          "High-end mainstream choice.",
-          "Good for premium Blender workstation and moderate-to-large Gaussian Splatting workflows when paired with 24GB GPU."
-        ]
-      },
-      "tags": ["high-end", "amd", "am5"]
-    },
-    {
       "id": "cpu-amd-r9-9950x3d2",
       "category": "cpu",
       "brand": "AMD",
@@ -219,11 +119,17 @@
         "cores": 16,
         "performanceClass": "flagship-mainstream",
         "notes": [
-          "Flagship AM5 option above 9800X3D pricing tier.",
+          "Top-tier AM5 flagship CPU.",
           "Positioned for premium Blender workstations that still want mainstream platform flexibility."
         ]
       },
-      "tags": ["flagship", "high-end", "amd", "am5", "recommended"]
+      "tags": [
+        "flagship",
+        "high-end",
+        "amd",
+        "am5",
+        "recommended"
+      ]
     },
     {
       "id": "mb-intel-b860m-entry",
@@ -249,7 +155,11 @@
           "Not intended for maximum-expandability workstation use."
         ]
       },
-      "tags": ["budget", "intel", "mATX"]
+      "tags": [
+        "budget",
+        "intel",
+        "mATX"
+      ]
     },
     {
       "id": "mb-intel-z890-atx",
@@ -275,7 +185,11 @@
           "Board-level RAM ceiling should be rechecked before 128GB selection."
         ]
       },
-      "tags": ["intel", "atx", "high-end"]
+      "tags": [
+        "intel",
+        "atx",
+        "high-end"
+      ]
     },
     {
       "id": "mb-amd-x870e-atx",
@@ -302,115 +216,12 @@
           "AM5 remains cost-effective versus HEDT until very large GS scenes or multi-GPU need appears."
         ]
       },
-      "tags": ["amd", "am5", "atx", "recommended"]
-    },
-    {
-      "id": "gpu-rtx-5060",
-      "category": "gpu",
-      "brand": "NVIDIA",
-      "model": "GeForce RTX 5060",
-      "price": {
-        "minTwd": 10990,
-        "maxTwd": 10990,
-        "confidence": "high",
-        "volatility": "medium",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "psuMinW": 650
-      },
-      "specs": {
-        "vramGb": 8,
-        "cuda": true,
-        "optix": true,
-        "gaussianSplattingTier": "not-recommended",
-        "notes": [
-          "Fine for Blender entry rendering.",
-          "VRAM too small for serious Gaussian Splatting training."
-        ]
-      },
-      "tags": ["blender-entry", "nvidia"]
-    },
-    {
-      "id": "gpu-rtx-5060-ti",
-      "category": "gpu",
-      "brand": "NVIDIA",
-      "model": "GeForce RTX 5060 Ti",
-      "price": {
-        "minTwd": 13790,
-        "maxTwd": 13790,
-        "confidence": "high",
-        "volatility": "medium",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "psuMinW": 650
-      },
-      "specs": {
-        "vramGb": 12,
-        "cuda": true,
-        "optix": true,
-        "gaussianSplattingTier": "minimum-viable",
-        "notes": [
-          "Compromise GPU for light Gaussian Splatting scenes.",
-          "Still much better for Blender than older midrange options."
-        ]
-      },
-      "tags": ["entry-gs", "nvidia"]
-    },
-    {
-      "id": "gpu-rtx-5070",
-      "category": "gpu",
-      "brand": "NVIDIA",
-      "model": "GeForce RTX 5070",
-      "price": {
-        "minTwd": 20000,
-        "maxTwd": 22000,
-        "confidence": "medium",
-        "volatility": "high",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "psuMinW": 850
-      },
-      "specs": {
-        "vramGb": 12,
-        "cuda": true,
-        "optix": true,
-        "gaussianSplattingTier": "minimum-viable",
-        "notes": [
-          "Good Blender render card in Taiwan market.",
-          "Still below ideal 24GB Gaussian Splatting VRAM target."
-        ]
-      },
-      "tags": ["balanced", "nvidia", "volatile"]
-    },
-    {
-      "id": "gpu-rtx-4090-legacy",
-      "category": "gpu",
-      "brand": "NVIDIA",
-      "model": "GeForce RTX 4090 24GB (legacy / rare stock)",
-      "price": {
-        "minTwd": 25000,
-        "maxTwd": 30000,
-        "confidence": "medium",
-        "volatility": "high",
-        "assemblyOnly": false
-      },
-      "compatibility": {
-        "psuMinW": 1200
-      },
-      "specs": {
-        "vramGb": 24,
-        "cuda": true,
-        "optix": true,
-        "gaussianSplattingTier": "recommended",
-        "notes": [
-          "Best practical prosumer target in collected research for Blender + Gaussian Splatting.",
-          "Availability in Taiwan may be limited or second-hand."
-        ]
-      },
-      "tags": ["recommended", "gs", "nvidia", "rare-stock"]
+      "tags": [
+        "amd",
+        "am5",
+        "atx",
+        "recommended"
+      ]
     },
     {
       "id": "gpu-rtx-a6000-48gb",
@@ -437,58 +248,12 @@
           "Useful when large VRAM matters more than consumer gaming value."
         ]
       },
-      "tags": ["pro", "enterprise", "gs", "nvidia"]
-    },
-    {
-      "id": "ram-ddr5-32-5600",
-      "category": "memory",
-      "brand": "Generic",
-      "model": "DDR5-5600 32GB Kit (16GB x2)",
-      "price": {
-        "minTwd": 13800,
-        "maxTwd": 13800,
-        "confidence": "high",
-        "volatility": "critical",
-        "assemblyOnly": true
-      },
-      "compatibility": {
-        "memoryType": "DDR5"
-      },
-      "specs": {
-        "capacityGb": 32,
-        "modules": 2,
-        "speed": "5600 MT/s",
-        "notes": [
-          "Baseline Blender memory option.",
-          "High Taiwan price volatility; verify before quoting."
-        ]
-      },
-      "tags": ["baseline", "volatile", "assembly-only"]
-    },
-    {
-      "id": "ram-ddr5-64-derived",
-      "category": "memory",
-      "brand": "Generic",
-      "model": "DDR5 64GB Target (32GB x2 or 16GB x4 class)",
-      "price": {
-        "minTwd": 27000,
-        "maxTwd": 28600,
-        "confidence": "low",
-        "volatility": "critical",
-        "assemblyOnly": true,
-        "pricingMethod": "derived-from-current-32gb-market"
-      },
-      "compatibility": {
-        "memoryType": "DDR5"
-      },
-      "specs": {
-        "capacityGb": 64,
-        "notes": [
-          "Recommended practical floor for Gaussian Splatting workstation use.",
-          "Derived estimate; replace with live bundle quote before purchase."
-        ]
-      },
-      "tags": ["recommended", "gs", "derived-estimate", "assembly-only"]
+      "tags": [
+        "pro",
+        "enterprise",
+        "gs",
+        "nvidia"
+      ]
     },
     {
       "id": "ram-ddr5-128-derived",
@@ -513,7 +278,12 @@
           "Derived estimate; live Taiwan quote required."
         ]
       },
-      "tags": ["high-end", "gs", "derived-estimate", "assembly-only"]
+      "tags": [
+        "high-end",
+        "gs",
+        "derived-estimate",
+        "assembly-only"
+      ]
     },
     {
       "id": "ssd-gen4-1tb",
@@ -538,7 +308,11 @@
           "Too small for heavier multi-scene GS workflow."
         ]
       },
-      "tags": ["baseline", "volatile", "assembly-only"]
+      "tags": [
+        "baseline",
+        "volatile",
+        "assembly-only"
+      ]
     },
     {
       "id": "ssd-gen4-2tb",
@@ -563,7 +337,11 @@
           "Strong fit for Blender cache and active GS projects."
         ]
       },
-      "tags": ["recommended", "volatile", "assembly-only"]
+      "tags": [
+        "recommended",
+        "volatile",
+        "assembly-only"
+      ]
     },
     {
       "id": "ssd-gen5-1tb",
@@ -589,7 +367,11 @@
           "Price less stable than Gen4."
         ]
       },
-      "tags": ["optional", "high-thermals", "derived-estimate"]
+      "tags": [
+        "optional",
+        "high-thermals",
+        "derived-estimate"
+      ]
     },
     {
       "id": "psu-650-bronze",
@@ -613,7 +395,9 @@
           "Not for 24GB-class GS GPU builds."
         ]
       },
-      "tags": ["budget"]
+      "tags": [
+        "budget"
+      ]
     },
     {
       "id": "psu-850-gold",
@@ -634,10 +418,13 @@
       "specs": {
         "notes": [
           "Best value PSU tier for mainstream workstation builds.",
-          "Suitable for RTX 5070-class systems."
+          "Suitable for builds with ~850W PSU recommendations."
         ]
       },
-      "tags": ["balanced", "recommended"]
+      "tags": [
+        "balanced",
+        "recommended"
+      ]
     },
     {
       "id": "psu-1200-titanium",
@@ -657,11 +444,14 @@
       },
       "specs": {
         "notes": [
-          "Required territory for RTX 4090 / RTX A6000 workstation-class builds.",
+          "Required territory for RTX A6000 and workstation-class GPU builds.",
           "Leaves safer headroom for sustained rendering loads."
         ]
       },
-      "tags": ["high-end", "workstation"]
+      "tags": [
+        "high-end",
+        "workstation"
+      ]
     },
     {
       "id": "cooler-air-highend",
@@ -677,7 +467,10 @@
         "pricingMethod": "market-band-estimate"
       },
       "compatibility": {
-        "supportedSockets": ["AM5", "LGA1851"]
+        "supportedSockets": [
+          "AM5",
+          "LGA1851"
+        ]
       },
       "specs": {
         "coolingClass": "mainstream-high-end",
@@ -686,7 +479,10 @@
           "Verify exact socket bracket before purchase."
         ]
       },
-      "tags": ["mainstream", "derived-estimate"]
+      "tags": [
+        "mainstream",
+        "derived-estimate"
+      ]
     },
     {
       "id": "cooler-aio-360",
@@ -701,7 +497,10 @@
         "assemblyOnly": false
       },
       "compatibility": {
-        "supportedSockets": ["AM5", "LGA1851"],
+        "supportedSockets": [
+          "AM5",
+          "LGA1851"
+        ],
         "requiresCaseRadiatorSupport": "360mm"
       },
       "specs": {
@@ -711,7 +510,10 @@
           "Needs case-level radiator support validation."
         ]
       },
-      "tags": ["high-end", "aio"]
+      "tags": [
+        "high-end",
+        "aio"
+      ]
     },
     {
       "id": "case-atx-mid",
@@ -726,8 +528,14 @@
         "assemblyOnly": false
       },
       "compatibility": {
-        "supportsMotherboard": ["ATX", "mATX"],
-        "radiatorSupport": ["240mm", "360mm-check-required"]
+        "supportsMotherboard": [
+          "ATX",
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "240mm",
+          "360mm-check-required"
+        ]
       },
       "specs": {
         "notes": [
@@ -735,7 +543,10 @@
           "Check GPU and radiator clearance with large cards."
         ]
       },
-      "tags": ["baseline", "atx"]
+      "tags": [
+        "baseline",
+        "atx"
+      ]
     },
     {
       "id": "case-airflow-atx",
@@ -751,8 +562,13 @@
         "pricingMethod": "market-band-estimate"
       },
       "compatibility": {
-        "supportsMotherboard": ["ATX", "mATX"],
-        "radiatorSupport": ["360mm"]
+        "supportsMotherboard": [
+          "ATX",
+          "mATX"
+        ],
+        "radiatorSupport": [
+          "360mm"
+        ]
       },
       "specs": {
         "notes": [
@@ -760,32 +576,12 @@
           "Use when pairing 24GB GPU with 360mm AIO."
         ]
       },
-      "tags": ["recommended", "high-airflow", "derived-estimate"]
-    }
-  ],
-  "referenceBuilds": [
-    {
-      "id": "build-gs-single-gpu",
-      "label": "Recommended Single-GPU GS Workstation",
-      "workloads": ["Blender rendering", "Gaussian Splatting training"],
-      "selectedPartIds": [
-        "cpu-amd-r9-9800x3d2",
-        "mb-amd-x870e-atx",
-        "gpu-rtx-5090",
-        "ram-ddr5-128-derived",
-        "ssd-gen4-2tb",
-        "psu-1200-titanium",
-        "cooler-aio-360",
-        "case-airflow-atx"
-      ],
-      "estimatedTotalTwd": {
-        "min": 121000,
-        "max": 138500
-      },
-      "notes": [
-        "Best practical target from collected research when staying on mainstream AM5.",
-        "Recheck GPU availability and RAM bundle pricing before quoting."
+      "tags": [
+        "recommended",
+        "high-airflow",
+        "derived-estimate"
       ]
     }
-  ]
+  ],
+  "referenceBuilds": []
 }
