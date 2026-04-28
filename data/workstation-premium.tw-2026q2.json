@@ -2110,8 +2110,8 @@
         "case-fulltower-workstation"
       ],
       "estimatedTotalTwd": {
-        "min": 1163950,
-        "max": 1330800
+        "min": 1333950,
+        "max": 1455800
       },
       "notes": [
         "96GB VRAM flagship with a 20TB SSD pool."
